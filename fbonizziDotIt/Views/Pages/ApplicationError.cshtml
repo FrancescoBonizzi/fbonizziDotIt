@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["MetaTitle"] = "Error!";
+    @model fbonizziDotIt.ViewModels.ApplicationErrorViewModel
+}
+
+<div>
+
+    <h1>@Model.Title</h1>
+    <span>@Model.PublicMessage</span>
+
+    <!-- TODO: Questo testo nascosto con un pulsante -->
+    <span>@Model.ErrorMessage</span>
+
+    <a href="javascript:void(0);" onclick="history.go(-1);">Back</a>
+
+</div>

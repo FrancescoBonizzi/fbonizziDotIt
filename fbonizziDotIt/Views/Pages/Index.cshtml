@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["MetaTitle"] = "Francesco Bonizzi | Software developer";
+    @model fbonizziDotIt.ViewModels.IndexViewModel
+}
+
+<span>Portfolio</span>
+
+<ul>
+    @foreach (var project in Model.Portfolio)
+    {
+        <li>
+            <span>@project.Title</span>
+            <span>@project.Description</span>
+            @foreach (var projectLink in project.Links)
+            {
+                <a href="@projectLink.Url" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
+            }
+
+            @foreach (var projectImage in project.Images)
+            {
+                <img src="@projectImage.Url" title="@projectImage.Title" />
+            }
+
+            @foreach (var projectVideos in project.Videos)
+            {
+                <!-- TODO capire come embeddare i video correttamente senza autoplay. Va davvero usato un iFrame? La pagina diventa
+                    più lenta a caricarsi di quanto? -->
+            }
+
+        </li>
+    }
+</ul>

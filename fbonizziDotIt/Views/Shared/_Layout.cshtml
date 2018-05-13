@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.MetaTitle</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="/Pages/Index"><h1>Francesco Bonizzi</h1></a>
+        <h2>Software developer</h2>
+        <img src="~/images/FrancescoBonizzi.jpg" title="Francesco Bonizzi image" />
+    </div>
+    <a href="/Pages/CurriculumVitae" title="Francesco Bonizzi Curriculum Vitae">Curriculum Vitae</a>
+
+    <div>
+        <span>Contact me!</span>
+        <ul>
+            @foreach (var contactInfo in @ViewBag.ContactInfos)
+            {
+                <li><a href="@contactInfo.Url" title="@contactInfo.Title" target="_blank">@contactInfo.Title</a></li>
+            }
+        </ul>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>Copyright © 2018 <a href="/Pages/Index">Francesco Bonizzi</a>. All Rights Reserved.</footer>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+</html>
