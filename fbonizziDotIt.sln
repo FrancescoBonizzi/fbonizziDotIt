@@ -10,6 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Privacy Policies", "Privacy Policies", "{7D343C7C-59BF-4D4E-97A2-3E1C618987AB}"
+	ProjectSection(SolutionItems) = preProject
+		Privacy Policies\Starfall-PrivacyPolicy.html = Privacy Policies\Starfall-PrivacyPolicy.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +28,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D343C7C-59BF-4D4E-97A2-3E1C618987AB} = {AC213F44-DEAB-4AE4-8943-C3A751AD90CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F0D555E-6443-43A9-9D15-502865F2688C}
