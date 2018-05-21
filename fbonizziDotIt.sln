@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Privacy Policies", "Privacy Policies", "{7D343C7C-59BF-4D4E-97A2-3E1C618987AB}"
 	ProjectSection(SolutionItems) = preProject
+		Privacy Policies\Rellow-PrivacyPolicy.txt = Privacy Policies\Rellow-PrivacyPolicy.txt
 		Privacy Policies\Starfall-PrivacyPolicy.txt = Privacy Policies\Starfall-PrivacyPolicy.txt
 	EndProjectSection
 EndProject
