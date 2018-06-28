@@ -4,34 +4,53 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Francesco Bonizzi developer website">
+    <meta name="author" content="Francesco Bonizzi">
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+
     <title>@ViewBag.MetaTitle</title>
 </head>
 
 <body>
 
-    <div>
-        <a href="/Pages/Index"><h1>Francesco Bonizzi</h1></a>
-        <h2>Software developer</h2>
-        <img src="~/images/FrancescoBonizzi.jpg" title="Francesco Bonizzi image" />
+
+    <div class="container">
+
+        <header class="jumbotron">
+            <h1 class="display-3">Francesco Bonizzi</h1>
+            <h2>Software developer</h2>
+            <img class="img-responsive" src="~/images/FrancescoBonizzi.jpg" title="Francesco Bonizzi image" width="150" />
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+            <a href="/Pages/CurriculumVitae" class="btn btn-primary btn-lg" title="Francesco Bonizzi Curriculum Vitae">Curriculum Vitae</a>
+        </header>
+
+        <div>
+            <span>Contact me!</span>
+            <ul>
+                @foreach (var contactInfo in @ViewBag.ContactInfos)
+                {
+                    <li><a href="@contactInfo.Url" title="@contactInfo.Title" target="_blank">@contactInfo.Title</a></li>
+                }
+            </ul>
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+
     </div>
-    <a href="/Pages/CurriculumVitae" title="Francesco Bonizzi Curriculum Vitae">Curriculum Vitae</a>
 
-    <div>
-        <span>Contact me!</span>
-        <ul>
-            @foreach (var contactInfo in @ViewBag.ContactInfos)
-            {
-                <li><a href="@contactInfo.Url" title="@contactInfo.Title" target="_blank">@contactInfo.Title</a></li>
-            }
-        </ul>
-    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; fbonizzi.it 2018. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    <div>
-        @RenderBody()
-    </div>
-
-    <footer>Copyright © 2018 <a href="/Pages/Index">Francesco Bonizzi</a>. All Rights Reserved.</footer>
-
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
     @RenderSection("Scripts", required: false)
 
 </body>

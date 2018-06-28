@@ -5,28 +5,30 @@
 
 <span>Portfolio</span>
 
-<ul>
+<div class="row text-center">
+
     @foreach (var project in Model.Portfolio)
     {
-        <li>
-            <span>@project.Title</span>
-            <span>@project.Description</span>
-            @foreach (var projectLink in project.Links)
-            {
-                <a href="@projectLink.Url" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
-            }
+        var firstImage = project.Images.First();
 
-            @foreach (var projectImage in project.Images)
-            {
-                <img src="@projectImage.Url" title="@projectImage.Title" />
-            }
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="@firstImage.Url" alt="@firstImage.Title">
 
-            @foreach (var projectVideos in project.Videos)
-            {
-                <!-- TODO capire come embeddare i video correttamente senza autoplay. Va davvero usato un iFrame? La pagina diventa
-                    più lenta a caricarsi di quanto? -->
-            }
+                <div class="card-body">
+                    <h4 class="card-title">@project.Title</h4>
+                    <p class="card-text">@project.Description</p>
+                </div>
 
-        </li>
+                <div class="card-footer">
+                    @foreach (var projectLink in project.Links)
+                    {
+                        <a href="@projectLink.Url" class="btn btn-primary" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
+                    }
+                </div>
+
+            </div>
+        </div>
     }
-</ul>
+
+</div>
