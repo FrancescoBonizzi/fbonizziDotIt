@@ -106,13 +106,17 @@
       "Title": "Twitter",
       "Url": "https://twitter.com/fbonizzi90"
     },
-    "Patreon": {
-      "Title": "Patreon",
-      "Url": "https://www.patreon.com/fbonizzi"
+    "Instangram": {
+      "Title": "Instangram",
+      "Url": "https://www.instagram.com/fbonizzi90/"
     },
     "YouTube": {
       "Title": "YouTube",
       "Url": "https://www.youtube.com/channel/UC0RHCG2CBNVJxeJa6nDapVA"
+    },
+    "Android": {
+      "Title": "Android",
+      "Url": "https://play.google.com/store/apps/dev?id=5765086271041072339"
     }
   }
 }

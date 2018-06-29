@@ -8,9 +8,10 @@
     <meta name="description" content="Francesco Bonizzi developer website">
     <meta name="author" content="Francesco Bonizzi">
 
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/custom.css" rel="stylesheet" />
-    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>@ViewBag.MetaTitle</title>
 </head>
@@ -29,13 +30,13 @@
 
         <div>
             <span>Contact me!</span>
-            <a href="@ViewBag.ContactInfos.Email.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Email.Title" target="_blank">@ViewBag.ContactInfos.Email.Title</a>
-            <a href="@ViewBag.ContactInfos.Github.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Github.Title" target="_blank">@ViewBag.ContactInfos.Github.Title</a>
-            <a href="@ViewBag.ContactInfos.Facebook.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Facebook.Title" target="_blank">@ViewBag.ContactInfos.Facebook.Title</a>
-            <a href="@ViewBag.ContactInfos.Twitter.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Twitter.Title" target="_blank">@ViewBag.ContactInfos.Twitter.Title</a>
-            <a href="@ViewBag.ContactInfos.Patreon.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Patreon.Title" target="_blank">@ViewBag.ContactInfos.Patreon.Title</a>
-            <a href="@ViewBag.ContactInfos.YouTube.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.YouTube.Title" target="_blank">@ViewBag.ContactInfos.YouTube.Title</a>
-            <!-- TODO Instangram -->
+            <a href="@ViewBag.ContactInfos.Email.Url" class="fa fa-envelope" title="@ViewBag.ContactInfos.Email.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.Github.Url" class="fa fa-github" title="@ViewBag.ContactInfos.Github.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.Facebook.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Facebook.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.Twitter.Url" class="fa fa-twitter" title="@ViewBag.ContactInfos.Twitter.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.Instangram.Url" class="fa fa-instangram" title="@ViewBag.ContactInfos.Instangram.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.YouTube.Url" class="fa fa-youtube" title="@ViewBag.ContactInfos.YouTube.Title" target="_blank"></a>
+            <a href="@ViewBag.ContactInfos.Android.Url" class="fa fa-android" title="@ViewBag.ContactInfos.Android.Title" target="_blank"></a>
 
         </div>
 
@@ -51,8 +52,8 @@
         </div>
     </footer>
 
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @RenderSection("Scripts", required: false)
 
 </body>
