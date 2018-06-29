@@ -10,12 +10,12 @@
 
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/custom.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
 
     <title>@ViewBag.MetaTitle</title>
 </head>
 
 <body>
-
 
     <div class="container">
 
@@ -29,12 +29,14 @@
 
         <div>
             <span>Contact me!</span>
-            <ul>
-                @foreach (var contactInfo in @ViewBag.ContactInfos)
-                {
-                    <li><a href="@contactInfo.Url" title="@contactInfo.Title" target="_blank">@contactInfo.Title</a></li>
-                }
-            </ul>
+            <a href="@ViewBag.ContactInfos.Email.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Email.Title" target="_blank">@ViewBag.ContactInfos.Email.Title</a>
+            <a href="@ViewBag.ContactInfos.Github.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Github.Title" target="_blank">@ViewBag.ContactInfos.Github.Title</a>
+            <a href="@ViewBag.ContactInfos.Facebook.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Facebook.Title" target="_blank">@ViewBag.ContactInfos.Facebook.Title</a>
+            <a href="@ViewBag.ContactInfos.Twitter.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Twitter.Title" target="_blank">@ViewBag.ContactInfos.Twitter.Title</a>
+            <a href="@ViewBag.ContactInfos.Patreon.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.Patreon.Title" target="_blank">@ViewBag.ContactInfos.Patreon.Title</a>
+            <a href="@ViewBag.ContactInfos.YouTube.Url" class="fa fa-facebook" title="@ViewBag.ContactInfos.YouTube.Title" target="_blank">@ViewBag.ContactInfos.YouTube.Title</a>
+            <!-- TODO Instangram -->
+
         </div>
 
         <div>

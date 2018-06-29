@@ -5,12 +5,12 @@ namespace fbonizziDotIt.Domain
 {
     public class WhatIWantToShowTheWorld
     {
-        public IEnumerable<ContactInfo> ContactInfos { get; }
+        public ContactInfos ContactInfos { get; }
         public IEnumerable<PortfolioItem> Portfolio { get; }
         public CurriculumVitae CurriculumVitae { get; }
 
         public WhatIWantToShowTheWorld(
-            IEnumerable<ContactInfo> contactInfos,
+            ContactInfos contactInfos,
             IEnumerable<PortfolioItem> portfolio,
             CurriculumVitae curriculumVitae)
         {
