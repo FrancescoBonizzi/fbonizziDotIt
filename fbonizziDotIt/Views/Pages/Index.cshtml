@@ -5,12 +5,13 @@
 
 <div class="row">
 
-    @foreach (var project in Model.Portfolio)
-    {
-        var firstImage = project.Images.First();
+    <div class="card-deck">
+        @foreach (var project in Model.Portfolio)
+        {
+            var firstImage = project.Images.First();
 
-        <div class="col-lg-3 col-md-6 mb-4">
             <div class="card">
+
                 <img class="card-img-top" src="@firstImage.Url" alt="@firstImage.Title">
 
                 <div class="card-body">
@@ -26,7 +27,7 @@
                 </div>
 
             </div>
-        </div>
-    }
+        }
+    </div>
 
 </div>
