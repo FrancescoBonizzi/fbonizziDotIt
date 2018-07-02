@@ -3,31 +3,29 @@
     @model fbonizziDotIt.ViewModels.IndexViewModel
 }
 
-<div class="row">
+<div>
 
-    <div class="card-deck">
         @foreach (var project in Model.Portfolio)
         {
             var firstImage = project.Images.First();
 
-            <div class="card">
+            <div>
 
-                <img class="card-img-top" src="@firstImage.Url" alt="@firstImage.Title">
+                <img src="@firstImage.Url" alt="@firstImage.Title">
 
-                <div class="card-body">
-                    <h4 class="card-title">@project.Title</h4>
-                    <p class="card-text">@project.Description</p>
+                <div>
+                    <h4>@project.Title</h4>
+                    <p>@project.Description</p>
                 </div>
 
-                <div class="card-footer">
+                <div>
                     @foreach (var projectLink in project.Links)
                     {
-                        <a href="@projectLink.Url" class="btn btn-primary" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
+                        <a href="@projectLink.Url" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
                     }
                 </div>
 
             </div>
         }
-    </div>
 
 </div>
