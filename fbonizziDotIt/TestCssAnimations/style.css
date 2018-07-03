@@ -1,0 +1,26 @@
+.starfall {
+    display: block;
+    width: 166px; 
+    height: 193px;
+    background: url('starfall/starfall.png') left center;
+	animation: play 0.8s steps(20) infinite;
+	animation-play-state: paused;
+}
+
+.starfall:hover {
+	animation-play-state: running;
+}
+
+
+
+@keyframes play {
+
+  0% {
+	background-position: 0px;
+  }
+
+  100% {
+	background-position: -3320px;
+  }
+  
+}
