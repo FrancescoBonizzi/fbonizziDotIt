@@ -1,0 +1,140 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+header {
+    height: 210px;
+    padding-top: 50px;
+    margin: 0 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    margin: 0 120px;
+    color: #b1b3b6;
+    font-size: 12px;
+}
+
+.projects-container {
+    margin: 0 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.header-column {
+    margin: 0 60px 60px 0;
+}
+
+.logo {
+    color: #454545;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.filter-link {
+    transition: color 0.4s ease;
+    color: #707070;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .filter-link:hover {
+        color: black;
+    }
+
+.static-link {
+    transition: color 0.4s ease;
+    color: #b1b3b6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .static-link:hover {
+        color: #454545;
+    }
+
+.social {
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin-top: 260px;
+    margin-left: 15px;
+}
+
+    .social li {
+        margin-bottom: 15px;
+    }
+
+        .social li a i {
+            transition: color 0.3s ease;
+            color: #b1b3b6;
+        }
+
+            .social li a i:hover {
+                color: #636466;
+            }
+
+.project {
+    width: 156px;
+    height: 227px;
+    margin: 0 60px 60px 0;
+    text-align: center;
+}
+
+    .project img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        float: left;
+    }
+
+    .project a {
+        display: block;
+    }
+
+    .project a, a:link, a:visited, a:active, a:focus {
+        color: #454545;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.project-category {
+    color: #b1b3b6;
+}
+
+/*.project-title {
+    transition: transform 0.8s ease;
+}
+
+    .project-title:hover {
+        transform: rotateY(-30deg);
+    }*/
+

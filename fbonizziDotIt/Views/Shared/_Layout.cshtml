@@ -3,56 +3,76 @@
 <html>
 
 <head>
-    
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Francesco Bonizzi developer website">
     <meta name="author" content="Francesco Bonizzi">
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/page.css">
+    <link rel="stylesheet" type="text/css" href="~/css/animations.css">
+
     <title>@ViewBag.MetaTitle</title>
+
 </head>
 
 <body>
 
-    <div class="container">
+    <header>
 
-        <header>
-            <h1>Francesco Bonizzi</h1>
-            <h2>Software developer</h2>
-            <img src="~/images/FrancescoBonizzi.jpg" title="Francesco Bonizzi image" width="150" />
-            <a href="/Pages/CurriculumVitae" title="Francesco Bonizzi Curriculum Vitae">Curriculum Vitae</a>
-        </header>
+        <div class="header-column">
 
-        <div>
-
-            <a href="mailto:@ViewBag.ContactInfos.Email.Url" title="@ViewBag.ContactInfos.Email.Title"></a>
-            <a href="@ViewBag.ContactInfos.Github.Url" title="@ViewBag.ContactInfos.Github.Title"></a>
-            <a href="@ViewBag.ContactInfos.Facebook.Url" title="@ViewBag.ContactInfos.Facebook.Title"></a>
-            <a href="@ViewBag.ContactInfos.Twitter.Url" title="@ViewBag.ContactInfos.Twitter.Title"></a>
-            <a href="@ViewBag.ContactInfos.Instangram.Url" title="@ViewBag.ContactInfos.Instangram.Title"></a>
-            <a href="@ViewBag.ContactInfos.YouTube.Url" title="@ViewBag.ContactInfos.YouTube.Title"></a>
-            <a href="@ViewBag.ContactInfos.Android.Url" title="@ViewBag.ContactInfos.Android.Title"></a>
+            <a class="logo" href="http://wwww.fbonizzi.it" title="Logo of fbonizzi.it" alt="Francesco Bonizzi">FRANCESCO BONIZZI</a>
+            <!-- TODO logo SVG invece del testo per fare effetti hover -->
 
         </div>
 
-        <div>
-            @RenderBody()
+        <div class="header-column">
+
+            <ul>
+                <li><a class="filter-link" title="Tap to select only my videogames">VIDEOGAMES</a></li>
+                <li><a class="filter-link" title="Tap to select only my software">SOFTWARE</a></li>
+                <li><a class="filter-link" title="Tap to select only my music">MUSIC</a></li>
+                <li><a class="filter-link" title="Tap to select only my all my work">ALL WORK</a></li>
+            </ul>
+
         </div>
+
+        <div class="header-column">
+
+            <ul>
+                <li><a class="static-link" title="Informations about Francesco Bonizzi">CURRICULUM VITAE</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <div class="social">
+
+        <ul>
+            <li><a href="mailto:@ViewBag.ContactInfos.Email.Url" title="@ViewBag.ContactInfos.Email.Title"><i class="fas fa-envelope fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Github.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Stackoverflow.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-stack-overflow fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Facebook.Url" title="@ViewBag.ContactInfos.Facebook.Title"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Twitter.Url" title="@ViewBag.ContactInfos.Twitter.Title"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.LinkedIn.Url" title="@ViewBag.ContactInfos.LinkedIn.Title"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Instangram.Url" title="@ViewBag.ContactInfos.Instangram.Title"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.YouTube.Url" title="@ViewBag.ContactInfos.YouTube.Title"><i class="fab fa-youtube fa-2x"></i></a></li>
+            <li><a href="@ViewBag.ContactInfos.Android.Url" title="@ViewBag.ContactInfos.Android.Title"><i class="fab fa-android fa-2x"></i></a></li>
+        </ul>
 
     </div>
 
-    <footer>
-        <div>
-            <p>Copyright &copy; fbonizzi.it 2018. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>Copyright &copy; fbonizzi.it 2018. All Rights Reserved.</footer>
 
     @RenderSection("Scripts", required: false)
 
 </body>
 
 </html>
-
-
-<!-- TODO: immagini le faccio io così sono allineate-->
-<!-- TODO: delle gif con lo stesso colore di uno sfondo sopra ad ogni gioco... es omini che corrono, pulsanti che si schiacciano -->

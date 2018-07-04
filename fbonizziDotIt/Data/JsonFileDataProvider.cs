@@ -33,8 +33,7 @@ namespace fbonizziDotIt.Data
             var curriculumVitae = JsonConvert.DeserializeObject<CurriculumVitae>(curriculumVitaeJson);
 
             return new WhatIWantToShowTheWorld(
-                webSiteInfos.ContactInfos,
-                webSiteInfos.Portfolio,
+                webSiteInfos.Social,
                 curriculumVitae);
         }
     }

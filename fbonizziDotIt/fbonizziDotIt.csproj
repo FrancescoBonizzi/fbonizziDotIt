@@ -5,9 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="TestCssAnimations\" />
+    <Compile Remove="wwwroot\css\**" />
+    <Content Remove="wwwroot\css\**" />
+    <EmbeddedResource Remove="wwwroot\css\**" />
+    <None Remove="wwwroot\css\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\animations.css" />
+    <Content Include="wwwroot\css\page.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Properties\PublishProfiles\" />
-    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\animations\starfall.png" />
   </ItemGroup>
 
   <ItemGroup>

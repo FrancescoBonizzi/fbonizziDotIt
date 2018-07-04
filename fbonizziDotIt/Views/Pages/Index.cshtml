@@ -3,29 +3,16 @@
     @model fbonizziDotIt.ViewModels.IndexViewModel
 }
 
-<div>
+<div class="projects-container">
 
-        @foreach (var project in Model.Portfolio)
-        {
-            var firstImage = project.Images.First();
+    <a href="Projects/starfall" alt="starfall">
+        <div class="project">
+            <div class="starfall"></div>
+            <div class="project-title">Starfall</div> <!-- TODO ci vuole la scritta del logo -->
+            <div class="project-category">Videogame</div> <!-- TODO ci vuole la scritta del logo -->
+        </div>
+    </a>
 
-            <div>
-
-                <img src="@firstImage.Url" alt="@firstImage.Title">
-
-                <div>
-                    <h4>@project.Title</h4>
-                    <p>@project.Description</p>
-                </div>
-
-                <div>
-                    @foreach (var projectLink in project.Links)
-                    {
-                        <a href="@projectLink.Url" title="@projectLink.Title" target="_blank">@projectLink.Title</a>
-                    }
-                </div>
-
-            </div>
-        }
+    <!-- TODO, gli altri -->
 
 </div>

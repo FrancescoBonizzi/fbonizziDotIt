@@ -24,7 +24,7 @@ namespace fbonizziDotIt.Controllers
                 var webSiteData = await _dataProvider.GetData(cancellationToken);
 
                 ViewBag.ContactInfos = webSiteData.ContactInfos;
-                return View(new IndexViewModel(webSiteData.Portfolio));
+                return View(new IndexViewModel());
             }
             catch (Exception ex)
             {

@@ -1,95 +1,7 @@
 {
   "CurriculumVitaeJsonUrl": "https://raw.githubusercontent.com/FrancescoBonizzi/CurriculumVitaeExporter/master/FrancescoBonizziConsoleCurriculum/FrancescoBonizzi-CV.json",
 
-  "Portfolio": [
-    {
-      "Title": "Starfall",
-      "Description": "You are a star fallen on the Earth. You find yourself in a dark forest looking for the way home. You are very weak. Catch all the glows to get your energy back and fly. But careful, avoid the black holes along the way trying to absorb you!",
-      "Links": [
-        {
-          "Title": "Android",
-          "Url": "https://play.google.com/store/apps/details?id=com.francescobonizzi.starfall"
-        },
-        {
-          "Title": "Windows",
-          "Url": "https://www.microsoft.com/en-us/store/p/starfall-free/9mw4t75wzr28"
-        }
-      ],
-      "Images": [
-        {
-          "Title": "Starfall: main menu screenshot",
-          "Url": "https://lh3.googleusercontent.com/7YGyGCckgwRv7XtYezlsHJ2z6_TmAtE5eL1Vp3kooyvhcU9FpkoUshAi55uDX_oNogSp=w1920-h949-rw"
-        },
-        {
-          "Title": "Starfall: gameplay screenshot, running",
-          "Url": "https://lh3.googleusercontent.com/JdkeInUcSRxWSxVhJwXJqgnYxeGaEj0iIAeXeJy5l7-8TW7i4jNq5yzo4aT51OZRN54R=w1920-h949-rw"
-        },
-        {
-          "Title": "Starfall: gameplay screenshot, jumping",
-          "Url": "https://lh3.googleusercontent.com/M__REcVtV-ihvMCDTuyYHq-XhRy_mEI2Z2xBdf0Flp75BwKMakb8ZGD13VqaFlQvmEvV=w1920-h949-rw"
-        }
-      ],
-      "Videos": [
-        {
-          "Title": "Starfall: gameplay video",
-          "Url": "https://youtu.be/DNd2Y2dOaw0"
-        }
-      ]
-    },
-    {
-      "Title": "Rellow",
-      "Description": "Rellow is a concentration game in which you have to choose the right colored button between all buttons available... On the top of the screen you will see a word that tells you which is the right color, but this won't be so simple because the word itself is colored with another color!",
-      "Links": [
-        {
-          "Title": "Android",
-          "Url": "https://play.google.com/store/apps/details?id=com.francescobonizzi.rellow"
-        }
-      ],
-      "Images": [
-        {
-          "Title": "Rellow: icon",
-          "Url": "https://lh3.googleusercontent.com/XldOZfiwdrZxbzykZeMZvkMAV00Q1cKe3fvWHbDLf2LQpuWRjO192aqwYYlwdvEWXrY=s180-rw"
-        },
-        {
-          "Title": "Rellow: main menu screenshot",
-          "Url": "https://lh3.googleusercontent.com/tiawS42pn0dCTKTO_GkcWtu7EeWZVlDsKNrjMeVFwsDPjHX64MCmy7gfBrf1ETHmUA=w1920-h947-rw"
-        },
-        {
-          "Title": "Rellow: in game screenshot",
-          "Url": "https://lh3.googleusercontent.com/iXxkI5wa_kfXmMbJbaYGzHBk-Mw-AMKQCSqN38D_6wu0CZo3LFTF41mXswHBWxwFVnLD=w1920-h947-rw"
-        },
-        {
-          "Title": "Rellow: in game screenshot",
-          "Url": "https://lh3.googleusercontent.com/K71wn6FSe1f-IB5yFcr9L7fFdcCAnbLaAwm77oPjXm2RV0oPmcJlQaSzu-ZiXBZdofk=w1920-h947-rw"
-        },
-        {
-          "Title": "Rellow: in game screenshot",
-          "Url": "https://lh3.googleusercontent.com/pmcgiRB6arEvc-f58Ewm_pd9rI5HorvQ45oczj3v9r_lQy5ySA25YohD4LJ8o1UJuLI=w1920-h947-rw"
-        },
-      ],
-      "Videos": [
-
-      ]
-    },
-    {
-      "Title": "Booli",
-      "Description": "Boolli is a boolean expressions interpreter",
-      "Links": [
-        {
-          "Title": "GitHub page",
-          "Url": "https://github.com/FrancescoBonizzi/Boolli"
-        }
-      ],
-      "Images": [
-        {
-          "Title": "Booli: logo",
-          "Url": "https://raw.githubusercontent.com/FrancescoBonizzi/Boolli/master/Boolli-icon-64x64.png"
-        }
-      ]
-    }
-  ],
-
-  "ContactInfos": {
+  "Social": {
     "Email": {
       "Title": "Email",
       "Url": "mailto:fbonizzi.90@gmail.com"
@@ -97,6 +9,10 @@
     "GitHub": {
       "Title": "GitHub",
       "Url": "https://github.com/FrancescoBonizzi/"
+    },
+    "Stackoverflow": {
+      "Title": "Stackoverflow",
+      "Url": "https://stackoverflow.com/users/1090403/francesco-bonizzi"
     },
     "Facebook": {
       "Title": "Facebook",
@@ -117,6 +33,10 @@
     "Android": {
       "Title": "Android",
       "Url": "https://play.google.com/store/apps/dev?id=5765086271041072339"
+    },
+    "LinkedIn": {
+      "Title": "LinkedIn",
+      "Url": "https://www.linkedin.com/in/francesco-bonizzi-037743154/"
     }
   }
 }
