@@ -17,11 +17,11 @@ body {
 header {
     height: 210px;
     padding-top: 50px;
-    margin: 0 120px;
+    margin: 0 150px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     align-content: flex-start;
 }
 
@@ -58,8 +58,6 @@ footer {
     color: #707070;
     transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
-    
-    height: 100px;
     text-align: center;
 }
 
@@ -68,6 +66,10 @@ footer {
         fill: black;
         transition: fill 0.4s ease, color 0.4s ease;
     }
+
+.logo-text {
+  
+}
 
 .tag {
     transition: color 0.4s ease;
@@ -116,10 +118,18 @@ footer {
             }
 
 .project {
-    width: 180px;
+    width: 193px;
     height: 245px;
     margin: 0 60px 60px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centered-horizontally {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .project-link {
@@ -133,12 +143,14 @@ footer {
     cursor: pointer;
 }
 
-
 .project-category {
     color: #b1b3b6;
+}
+
+.project-title, project-category {
+    width: 193px;
 }
 
 .main-content {
     margin-top: 100px;
 }
-
