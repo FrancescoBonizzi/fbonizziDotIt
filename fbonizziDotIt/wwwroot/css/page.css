@@ -102,28 +102,22 @@ footer {
             }
 
 .project {
-    width: 166px;
-    height: 230px;
+    width: 180px;
+    height: 245px;
     margin: 0 60px 60px 0;
     text-align: center;
 }
 
-    .project img {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        float: left;
-    }
+.project-link {
+    display: block;
+    height: 245px;
+}
 
-    .project a {
-        display: block;
-    }
-
-    .project a, a:link, a:visited, a:active, a:focus {
-        color: #454545;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.project-container a, a:link, a:visited, a:active, a:focus {
+    color: #454545;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 .project-category {
