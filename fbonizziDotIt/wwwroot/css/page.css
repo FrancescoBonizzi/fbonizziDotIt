@@ -49,11 +49,18 @@ footer {
     margin: 0 60px 60px 0;
 }
 
+.logo {
+    height: 100px;
+}
+
 .logo-container {
     fill: #707070;
     color: #707070;
     transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
+    
+    height: 100px;
+    text-align: center;
 }
 
     .logo-container:hover {
@@ -62,20 +69,14 @@ footer {
         transition: fill 0.4s ease, color 0.4s ease;
     }
 
-.logo-text {
-    color: #454545;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.filter-link {
+.tag {
     transition: color 0.4s ease;
     color: #707070;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
-    .filter-link:hover {
+    .tag:hover {
         color: black;
     }
 
@@ -97,7 +98,7 @@ footer {
     top: 0;
     bottom: 0;
     display: block;
-    margin-top: 260px;
+    margin-top: 360px;
     margin-left: 15px;
 }
 
@@ -136,3 +137,8 @@ footer {
 .project-category {
     color: #b1b3b6;
 }
+
+.main-content {
+    margin-top: 100px;
+}
+
