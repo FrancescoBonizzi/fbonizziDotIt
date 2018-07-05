@@ -74,3 +74,18 @@
         background-position: -300px;
     }
 }
+
+
+
+.booli {
+    display: block;
+    width: 185px;
+    height: 185px;
+    background: url('../animations/booli.png') center center no-repeat;
+    background-size: 150px 150px;
+}
+
+    .booli:hover {
+        transition: background-size 0.3s ease;
+        background-size: 185px 185px;
+    }
