@@ -48,3 +48,29 @@
         background-position: -2900px;
     }
 }
+
+
+
+.markindedark {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url('../animations/markindedark.png') left center;
+    animation: markindedark 0.8s steps(2) infinite;
+    animation-play-state: paused;
+}
+
+    .markindedark:hover {
+        animation-play-state: running;
+    }
+
+@keyframes markindedark {
+
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -300px;
+    }
+}
