@@ -50,6 +50,12 @@ footer {
 }
 
 .logo {
+    fill: #454545;
+    cursor: pointer;
+
+}
+
+.logo-text {
     color: #454545;
     text-decoration: none;
     cursor: pointer;
@@ -123,12 +129,3 @@ footer {
 .project-category {
     color: #b1b3b6;
 }
-
-/*.project-title {
-    transition: transform 0.8s ease;
-}
-
-    .project-title:hover {
-        transform: rotateY(-30deg);
-    }*/
-
