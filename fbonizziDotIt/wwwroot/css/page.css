@@ -49,11 +49,18 @@ footer {
     margin: 0 60px 60px 0;
 }
 
-.logo {
-    fill: #454545;
+.logo-container {
+    fill: #707070;
+    color: #707070;
+    transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
-
 }
+
+    .logo-container:hover {
+        color: black;
+        fill: black;
+        transition: fill 0.4s ease, color 0.4s ease;
+    }
 
 .logo-text {
     color: #454545;
