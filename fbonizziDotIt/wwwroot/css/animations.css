@@ -98,12 +98,17 @@
 
 .curriculumvitaeexporter {
     display: block;
-    width: 193px;
+    width: 207px;
     height: 193px;
-    background: url('../animations/booli.png') center center no-repeat;
-    background-size: 150px 150px;
-    transition: background-size 0.3s ease;
+    background: url('../animations/curriculumvitaeexporter.png') center center no-repeat;
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: transform 0.8s ease;
 }
 
     .curriculumvitaeexporter:hover {
+        transform: rotateY(40deg) rotateX(-10deg);
+        transition: transform 0.8s ease;
     }
+
+
+    /* TODO devono avere tutti la stessa width altrimenti non si allineano col testo sotto */
