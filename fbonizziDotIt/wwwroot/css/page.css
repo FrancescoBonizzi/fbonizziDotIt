@@ -26,13 +26,14 @@ header {
 }
 
 footer {
-    bottom: 0;
-    width: 100%;
     text-align: left;
-    height: 50px;
     margin: 0 120px;
     color: #b1b3b6;
     font-size: 12px;
+}
+
+.footer-separator {
+    height: 200px;
 }
 
 .projects-container {
@@ -89,26 +90,26 @@ footer {
     }
 
 .social {
-    width: 80px;
-    position: fixed;
+    width: 40px;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    display: block;
     margin-top: 360px;
     margin-left: 15px;
 }
 
-    .social li {
+    .social a {
         margin-bottom: 15px;
+        display: block;
     }
 
-        .social li a i {
+        .social a i {
             transition: color 0.3s ease;
             color: #b1b3b6;
         }
 
-            .social li a i:hover {
+            .social a i:hover {
                 color: #636466;
             }
 
@@ -188,6 +189,28 @@ footer {
     .logo-container {
         color: black;
         fill: black;
+    }
+
+    .social {
+        background-color: #b1b3b6;
+        margin: 0;
+        width: auto;
+        height: 100px;
+        float: left;
+        margin: 5px;
+    }
+
+    .social a {
+        float: left;
+    }
+
+    .social a i {
+        color: white;
+    }
+
+    footer {
+        text-align: center;
+        margin: 0 0 15px 0;
     }
 
 }
