@@ -16,6 +16,16 @@
 
     <title>@ViewBag.MetaTitle</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121954893-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-121954893-1');
+    </script>
+
 </head>
 
 <body>
@@ -24,13 +34,10 @@
 
         <div class="header-column">
 
-            <!-- Secondo me mi conviene flexare nello stesso modo anche l'header per avere le colonne, così sono anche già allineate-->
-
             <a href="/" title="Logo of fbonizzi.it" alt="Francesco Bonizzi">
 
                 <div class="logo-container">
 
-                    <!-- TODO Mettilo in una partial view -->
                     <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.7 141.7">
                         <path class="st0" d="M-15.6-258.7v3.8c-32.1 0-58.1 25.8-58.1 57.6l0 0h27.1v3.8h-27c0.9 13.9 6.9 27 16.9 36.9l0 0 -2.7 2.7C-71-165.4-77.6-181-77.6-197.3 -77.6-231.2-49.8-258.7-15.6-258.7L-15.6-258.7z" />
                         <path class="st0" d="M-19.4-193.5c0-33.9 27.8-61.4 62-61.4l0 0v3.8c-32.1 0-58.1 25.8-58.1 57.6l0 0H-19.4z" />
