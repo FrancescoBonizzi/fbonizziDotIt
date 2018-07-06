@@ -26,7 +26,6 @@ header {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: left;
@@ -162,3 +161,33 @@ footer {
 }
 
 
+
+
+@media only screen and (max-width: 768px) {
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+    }
+
+    .tag {
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .header-column {
+        margin: 10px 0 0 0;
+    }
+
+    .logo-container {
+        color: black;
+        fill: black;
+    }
+
+}
