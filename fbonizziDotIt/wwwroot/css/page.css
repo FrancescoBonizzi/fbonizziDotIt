@@ -67,10 +67,6 @@ footer {
         transition: fill 0.4s ease, color 0.4s ease;
     }
 
-.logo-text {
-  
-}
-
 .tag {
     transition: color 0.4s ease;
     color: #707070;
@@ -119,7 +115,7 @@ footer {
 
 .project {
     width: 193px;
-    height: 245px;
+    height: 300px;
     margin: 0 60px 60px 0;
     text-align: center;
     display: flex;
@@ -134,7 +130,6 @@ footer {
 
 .project-link {
     display: block;
-    height: 245px;
 }
 
 .project-container a, a:link, a:visited, a:active, a:focus {
@@ -147,10 +142,23 @@ footer {
     color: #b1b3b6;
 }
 
-.project-title, project-category {
-    width: 193px;
+.project-comingsoon {
+    color: #b1b3b6;
+    transition: color 0.8s ease, font-size 0.8s ease;
 }
+
+    .project-comingsoon:hover {
+        color: #ff0037;
+        font-size: 18px;
+        transition: color 0.8s ease, font-size 0.8s ease;
+    }
+
+    .project-title, project-category, .project-comingsoon {
+        width: 193px;
+    }
 
 .main-content {
     margin-top: 100px;
 }
+
+

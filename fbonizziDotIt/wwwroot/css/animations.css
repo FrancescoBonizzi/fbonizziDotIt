@@ -111,4 +111,29 @@
     }
 
 
-    /* TODO devono avere tutti la stessa width altrimenti non si allineano col testo sotto */
+
+
+
+.rellow {
+    display: block;
+    width: 193px;
+    height: 193px;
+    background: url('../animations/rellow.png') left center;
+    animation: rellow 0.8s steps(6) infinite;
+    animation-play-state: paused;
+}
+
+    .rellow:hover {
+        animation-play-state: running;
+    }
+
+@keyframes rellow {
+
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -1158px;
+    }
+}
