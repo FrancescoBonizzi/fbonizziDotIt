@@ -17,6 +17,7 @@ namespace fbonizziDotIt
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:51353/")
                 .Build();
     }
 }
