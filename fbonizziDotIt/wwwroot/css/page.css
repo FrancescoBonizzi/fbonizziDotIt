@@ -153,21 +153,20 @@ footer {
         transition: color 0.8s ease, font-size 0.8s ease;
     }
 
-    .project-title, project-category, .project-comingsoon {
-        width: 193px;
-    }
+.project-title, project-category, .project-comingsoon {
+    width: 193px;
+}
 
 .main-content {
     margin-top: 100px;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
 
     .projects-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     header {
@@ -194,26 +193,30 @@ footer {
     .social {
         position: relative;
         background-color: #b1b3b6;
-        margin: 0;
+        margin: 50px 0 0 0;
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: row;
         text-align: center;
+        justify-content: center;
     }
 
-    .social a {
-        padding: 5px;
-        margin: 0;
-    }
+        .social a {
+            padding: 15px;
+            margin: 0;
+        }
 
-    .social a i {
-        color: white;
-    }
+            .social a i {
+                color: white;
+            }
 
     footer {
         text-align: center;
         margin: 0 0 15px 0;
     }
 
+    .project {
+        margin: 0 0 60px 0;
+    }
 }
