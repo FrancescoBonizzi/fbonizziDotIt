@@ -192,16 +192,19 @@ footer {
     }
 
     .social {
+        position: relative;
         background-color: #b1b3b6;
         margin: 0;
-        width: auto;
-        height: 100px;
-        float: left;
-        margin: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
     }
 
     .social a {
-        float: left;
+        padding: 5px;
+        margin: 0;
     }
 
     .social a i {
