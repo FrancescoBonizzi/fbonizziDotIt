@@ -17,12 +17,13 @@ body {
 header {
     height: 210px;
     padding-top: 50px;
-    margin: 0 150px;
+    padding-left: 150px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
+    background-color: #dee2eb;
 }
 
 footer {
@@ -53,39 +54,39 @@ footer {
 }
 
 .logo-container {
-    fill: #707070;
-    color: #707070;
+    fill: #b10001;
+    color: #b10001;
     transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
     text-align: center;
 }
 
     .logo-container:hover {
-        color: black;
-        fill: black;
+        color: white;
+        fill: white;
         transition: fill 0.4s ease, color 0.4s ease;
     }
 
 .tag {
     transition: color 0.4s ease;
-    color: #707070;
+    color: #1a5eab;
     text-decoration: none;
     cursor: default;
 }
 
     .tag:hover {
-        color: black;
+        color: white;
     }
 
 .static-link {
     transition: color 0.4s ease;
-    color: #b1b3b6;
+    color: #e3d31a;
     text-decoration: none;
     cursor: pointer;
 }
 
     .static-link:hover {
-        color: #454545;
+        color: white;
     }
 
 .social {
@@ -182,7 +183,8 @@ footer {
     header {
         flex-direction: column;
         height: auto;
-        margin: auto;
+        padding-left: 0;
+        padding-top: 20px;
     }
 
     .tag {
@@ -203,7 +205,7 @@ footer {
     .social {
         position: relative;
         background-color: #b1b3b6;
-        margin: 50px 0 0 0;
+        margin: 0;
         width: 100%;
         display: flex;
         align-items: center;
