@@ -137,3 +137,21 @@
         background-position: -1158px;
     }
 }
+
+
+
+
+
+.lilloniz {
+    display: block;
+    width: 193px;
+    height: 193px;
+    background: url('../animations/lilloniz.png') center center no-repeat;
+    background-size: 150px 150px;
+    transition: background-size 0.3s ease;
+}
+
+    .lilloniz:hover {
+        transition: background-size 0.3s ease;
+        background-size: 180px 180px;
+    }
