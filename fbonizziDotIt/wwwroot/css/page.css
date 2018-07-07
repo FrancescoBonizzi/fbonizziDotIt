@@ -132,7 +132,7 @@ footer {
     display: block;
 }
 
-.project-container a, a:link, a:visited, a:active, a:focus {
+.projects-container a, a:link, a:visited, a:active, a:focus {
     color: #454545;
     text-decoration: none;
     cursor: pointer;
@@ -166,6 +166,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
     .projects-container {
         flex-direction: column;
         justify-content: center;
