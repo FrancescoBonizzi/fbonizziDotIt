@@ -23,7 +23,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     align-content: flex-start;
-    background-color: #dee2eb;
+    background-color: #252831;
 }
 
 footer {
@@ -54,8 +54,8 @@ footer {
 }
 
 .logo-container {
-    fill: #b10001;
-    color: #b10001;
+    fill: #fdf50e;
+    color: #fdf50e;
     transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
     text-align: center;
@@ -69,7 +69,7 @@ footer {
 
 .tag {
     transition: color 0.4s ease;
-    color: #1a5eab;
+    color: #dd3544;
     text-decoration: none;
     cursor: default;
 }
@@ -80,7 +80,7 @@ footer {
 
 .static-link {
     transition: color 0.4s ease;
-    color: #e3d31a;
+    color: #2665d9;
     text-decoration: none;
     cursor: pointer;
 }
@@ -197,15 +197,11 @@ footer {
         margin: 10px 0 0 0;
     }
 
-    .logo-container {
-        color: black;
-        fill: black;
-    }
-
     .social {
         position: relative;
-        background-color: #b1b3b6;
+        background-color: #252831;
         margin: 0;
+        padding: 10px 0 0 0;
         width: 100%;
         display: flex;
         align-items: center;
