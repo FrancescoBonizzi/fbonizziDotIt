@@ -26,9 +26,9 @@ namespace fbonizziDotIt.Controllers
                 ViewBag.ContactInfos = webSiteData.ContactInfos;
                 return View(new IndexViewModel());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return RedirectToAction("ApplicationError", "Pages", new { exception = ex });
+                return RedirectToAction("ApplicationError", "Pages");
             }
         }
 
@@ -42,13 +42,13 @@ namespace fbonizziDotIt.Controllers
                 ViewBag.ContactInfos = webSiteData.ContactInfos;
                 return View(new CurriculumVitaeViewModel(webSiteData.CurriculumVitae));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return RedirectToAction("ApplicationError", "Pages", new { exception = ex });
+                return RedirectToAction("ApplicationError", "Pages");
             }
         }
 
-        public IActionResult ApplicationError(Exception exception)
-            => View(new ApplicationErrorViewModel(exception));
+        public IActionResult ApplicationError()
+            => View(new ApplicationErrorViewModel());
     }
 }

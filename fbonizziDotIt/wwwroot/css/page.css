@@ -164,8 +164,13 @@ footer {
     display: none !important;
 }
 
-@media only screen and (max-width: 1100px) {
+.error-message {
+    margin-left: 120px;
+}
 
+
+
+@media only screen and (max-width: 1100px) {
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
@@ -232,4 +237,8 @@ footer {
         margin: 0;
     }
 
+    .error-message {
+        text-align: center;
+        margin: 50px;
+    }
 }

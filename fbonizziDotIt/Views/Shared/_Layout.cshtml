@@ -19,11 +19,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121954893-1"></script>
     <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-121954893-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-121954893-1');
     </script>
 
 </head>
@@ -93,18 +92,20 @@
 
     </header>
 
+
     <div class="social">
-
-        <a href="mailto:@ViewBag.ContactInfos.Email.Url" title="@ViewBag.ContactInfos.Email.Title"><i class="fas fa-envelope fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.Github.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-github fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.Stackoverflow.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-stack-overflow fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.Facebook.Url" title="@ViewBag.ContactInfos.Facebook.Title"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.Twitter.Url" title="@ViewBag.ContactInfos.Twitter.Title"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.LinkedIn.Url" title="@ViewBag.ContactInfos.LinkedIn.Title"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="@ViewBag.ContactInfos.Instangram.Url" title="@ViewBag.ContactInfos.Instangram.Title"><i class="fab fa-instagram fa-2x"></i></a>
-        <a class="socialyoutube" href="@ViewBag.ContactInfos.YouTube.Url" title="@ViewBag.ContactInfos.YouTube.Title"><i class="fab fa-youtube fa-2x"></i></a>
-        <a class="socialandroid" href="@ViewBag.ContactInfos.Android.Url" title="@ViewBag.ContactInfos.Android.Title"><i class="fab fa-android fa-2x"></i></a>
-
+        @if (ViewBag.ContactInfos != null)
+        {
+            <a href="mailto:@ViewBag.ContactInfos.Email.Url" title="@ViewBag.ContactInfos.Email.Title"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.Github.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-github fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.Stackoverflow.Url" title="@ViewBag.ContactInfos.Github.Title"><i class="fab fa-stack-overflow fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.Facebook.Url" title="@ViewBag.ContactInfos.Facebook.Title"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.Twitter.Url" title="@ViewBag.ContactInfos.Twitter.Title"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.LinkedIn.Url" title="@ViewBag.ContactInfos.LinkedIn.Title"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="@ViewBag.ContactInfos.Instangram.Url" title="@ViewBag.ContactInfos.Instangram.Title"><i class="fab fa-instagram fa-2x"></i></a>
+            <a class="socialyoutube" href="@ViewBag.ContactInfos.YouTube.Url" title="@ViewBag.ContactInfos.YouTube.Title"><i class="fab fa-youtube fa-2x"></i></a>
+            <a class="socialandroid" href="@ViewBag.ContactInfos.Android.Url" title="@ViewBag.ContactInfos.Android.Title"><i class="fab fa-android fa-2x"></i></a>
+        }
     </div>
 
     <div class="main-content">

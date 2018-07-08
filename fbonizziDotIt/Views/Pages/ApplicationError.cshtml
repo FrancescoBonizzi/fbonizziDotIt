@@ -3,14 +3,11 @@
     @model fbonizziDotIt.ViewModels.ApplicationErrorViewModel
 }
 
-<div>
+<div class="error-message">
 
     <h1>@Model.Title</h1>
-    <span>@Model.PublicMessage</span>
-
-    <!-- TODO: Questo testo nascosto con un pulsante -->
-    <span>@Model.ErrorMessage</span>
-
-    <a href="javascript:void(0);" onclick="history.go(-1);">Back</a>
+    <span>@Model.PublicMessageRow1</span>
+    <br/>
+    <span>@Model.PublicMessageRow2</span>
 
 </div>
