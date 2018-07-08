@@ -3,50 +3,80 @@
     @model fbonizziDotIt.ViewModels.CurriculumVitaeViewModel
 }
 
-<h2>@Model.CurriculumVitae.Headline</h2>
+<div class="curriculum-vitae">
 
-<span>@Model.CurriculumVitae.CurrentPosition</span>
+   
 
-<span>@Model.CurriculumVitae.Address</span>
-<span><a href="mailto:@Model.CurriculumVitae.Email"></a></span>
-<span>@Model.CurriculumVitae.BirthDate.ToString("yyyy-MM-dd", Model.Culture)</span>
+    <div class="curriculum-header">
 
-<span>Experience</span>
-<ul>
-    @foreach (var workingExperience in Model.CurriculumVitae.Experiences)
-    {
-        <li>@Model.GetExperienceDescription(workingExperience)</li>
-    }
-</ul>
+        <img src="~/images/FrancescoBonizzi.jpg" alt="Francesco Bonizzi photo" />
 
-<span>Education</span>
-<ul>
-    @foreach (var educationInfo in Model.CurriculumVitae.Education)
-    {
-        <li>@Model.GetExperienceDescription(educationInfo)</li>
-    }
-</ul>
+        <div class="curriculum-header-text">
 
-<span>Skills</span>
-<ul>
-    @foreach (var skill in Model.CurriculumVitae.Skills)
-    {
-        <li>@skill</li>
-    }
-</ul>
+            <h1>@Model.CurriculumVitae.FullName</h1>
+            <h2>@Model.CurriculumVitae.Headline</h2>
 
-<span>Projects</span>
-<ul>
-    @foreach (var project in Model.CurriculumVitae.Projects.OrderBy(p => p.Title))
-    {
-        <li><a href="@project.Url" title="@project.Title">@project.Title</a></li>
-    }
-</ul>
+            <span>@Model.CurriculumVitae.CurrentPosition</span>
+            <span>@Model.CurriculumVitae.Address</span>
+            <span>Birth date: @Model.CurriculumVitae.BirthDate.ToString("yyyy-MM-dd", Model.Culture)</span>
+            <span><a title="Contact me" alt="Francesco Bonizzi email" href="mailto:@Model.CurriculumVitae.Email">@Model.CurriculumVitae.Email</a></span>
 
-<span>Hobbies</span>
-<ul>
-    @foreach (var hobby in Model.CurriculumVitae.Hobbies)
-    {
-        <li>@hobby</li>
-    }
-</ul>
+        </div>
+
+    </div>
+
+    <div class="curriculum-story">
+
+        <div class="curriculum-section">
+            <span class="curriculum-section-title">Experience</span>
+            <ul>
+                @foreach (var workingExperience in Model.CurriculumVitae.Experiences)
+                {
+                    <li>@Model.GetExperienceDescription(workingExperience)</li>
+                }
+            </ul>
+        </div>
+
+        <div class="curriculum-section">
+            <span class="curriculum-section-title">Education</span>
+            <ul>
+                @foreach (var educationInfo in Model.CurriculumVitae.Education)
+                {
+                    <li>@Model.GetExperienceDescription(educationInfo)</li>
+                }
+            </ul>
+        </div>
+
+        <div class="curriculum-section">
+            <span class="curriculum-section-title">Skills</span>
+            <ul>
+                @foreach (var skill in Model.CurriculumVitae.Skills)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+        </div>
+
+        <div class="curriculum-section">
+            <span class="curriculum-section-title">Projects</span>
+            <ul>
+                @foreach (var project in Model.CurriculumVitae.Projects.OrderBy(p => p.Title))
+                {
+                    <li><a href="@project.Url" alt="@project.Title" title="@project.Title">@project.Title</a></li>
+                }
+            </ul>
+        </div>
+
+        <div class="curriculum-section">
+            <span class="curriculum-section-title">Hobbies</span>
+            <ul>
+                @foreach (var hobby in Model.CurriculumVitae.Hobbies)
+                {
+                    <li>@hobby</li>
+                }
+            </ul>
+        </div>
+
+    </div>
+
+</div>

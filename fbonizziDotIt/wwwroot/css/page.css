@@ -78,16 +78,16 @@ footer {
         color: white;
     }
 
-.static-link {
+.header-column .static-link {
     transition: color 0.4s ease;
     color: #2665d9;
     text-decoration: none;
     cursor: pointer;
 }
 
-    .static-link:hover {
-        color: white;
-    }
+.static-link:hover {
+    color: white;
+}
 
 .social {
     width: 40px;
@@ -165,10 +165,86 @@ footer {
 }
 
 .error-message {
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
+.curriculum-vitae{
+    margin-left: 130px;
+}
 
+.curriculum-vitae {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    align-items: start;
+}
+
+.curriculum-section a {
+    color: black;
+}
+
+    .curriculum-section a:hover {
+        color: #dd3544;
+    }
+
+.curriculum-header a, .curriculum-header a:link, .curriculum-header a:visited, .curriculum-header a:active, .curriculum-header a:focus {
+    color: white;
+}
+
+    .curriculum-header a:hover {
+        color: #fdf50e;
+    }
+
+.curriculum-vitae span {
+    display: block;
+}
+
+.curriculum-section {
+    background-color: #eeeeed;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+    .curriculum-section li {
+        margin-top: 2px;
+        font-weight: normal;
+    }
+
+.curriculum-section-title {
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #dd3544;
+}
+
+.curriculum-header {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: start;
+    align-items: start;
+    background-color: #252831;
+    color: white;
+    margin: 0 30px;
+}
+
+    .curriculum-header img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        align-self: center;
+    }
+
+.curriculum-header-text {
+    justify-self: start;
+    align-self: center;
+    padding: 30px;
+    font-weight: normal;
+}
+
+.curriculum-story {
+    margin-right: 30px;
+}
 
 @media only screen and (max-width: 1100px) {
     .projects-container {
@@ -183,7 +259,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-
 
     header {
         flex-direction: column;
@@ -228,6 +303,27 @@ footer {
         text-align: center;
         margin: 0 0 15px 0;
     }
+
+    .curriculum-story {
+        margin: 0 30px;
+    }
+
+    .curriculum-vitae {
+        grid-template-columns: none;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .curriculum-header {
+        margin-bottom: 10px;
+        grid-template-rows: none;
+        grid-template-columns: 1fr auto;
+        justify-items: center;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -241,4 +337,5 @@ footer {
         text-align: center;
         margin: 50px;
     }
+
 }
