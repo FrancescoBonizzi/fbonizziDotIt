@@ -9,9 +9,9 @@ namespace fbonizziDotIt.Controllers
 {
     public class PagesController : Controller
     {
-        private readonly IDataProvider _dataProvider;
+        private readonly ICachedDataProvider _dataProvider;
 
-        public PagesController(IDataProvider dataProvider)
+        public PagesController(ICachedDataProvider dataProvider)
         {
             _dataProvider = dataProvider ?? throw new ArgumentNullException(nameof(dataProvider));
         }

@@ -13,7 +13,9 @@ namespace fbonizziDotIt
             IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<IDataProvider, JsonFileDataProvider>();
+            services
+                .AddSingleton<IDataProvider, JsonFileDataProvider>()
+                .AddSingleton<ICachedDataProvider, CachedDataProvider>();
         }
 
         public void Configure(
