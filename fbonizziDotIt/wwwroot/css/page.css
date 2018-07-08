@@ -339,3 +339,11 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 400px) {
+
+    .curriculum-header img {
+        display: none;
+    }
+    
+}
