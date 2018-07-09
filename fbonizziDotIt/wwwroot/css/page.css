@@ -37,7 +37,7 @@ header {
 }
 
 footer {
-    text-align: left;
+    text-align: center;
     margin: 30px 120px;
     color: #b1b3b6;
     font-size: 12px;
@@ -122,7 +122,7 @@ footer {
             }
 
 .project {
-    width: 379px;
+    width: 200px;
     height: 300px;
     text-align: center;
     display: flex;
@@ -161,7 +161,7 @@ footer {
     }
 
 .project-title, project-category, .project-comingsoon {
-    width: 379px;
+    width: 200px;
 }
 
 .main-content {
