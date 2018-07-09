@@ -48,7 +48,7 @@ footer {
     margin: 0 120px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    justify-items: start;
+    justify-items: center;
     align-items: center;
 }
 
@@ -84,7 +84,7 @@ footer {
 
 .tag {
     transition: color 0.4s ease;
-    color: #dd3544;
+    color: #f13243;
     text-decoration: none;
     cursor: default;
 }
@@ -95,7 +95,7 @@ footer {
 
 .header-column .static-link {
     transition: color 0.4s ease;
-    color: #2665d9;
+    color: #20baff;
     text-decoration: none;
     cursor: pointer;
 }
@@ -239,7 +239,7 @@ footer {
     .curriculum-header img {
         display: block;
         width: 100%;
-        max-width: 280px;
+        max-width: 327px;
         align-self: center;
     }
 
@@ -250,9 +250,13 @@ footer {
     font-weight: normal;
 }
 
-.curriculum-story {
-    margin-right: 30px;
-}
+    .curriculum-header-text h1, .curriculum-header-text h2 {
+        margin-bottom: 15px;
+    }
+
+    .curriculum-story {
+        margin-right: 30px;
+    }
 
 @media only screen and (max-width: 1100px) {
     .projects-container {
