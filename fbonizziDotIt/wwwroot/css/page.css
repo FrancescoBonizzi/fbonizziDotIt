@@ -16,15 +16,24 @@ body {
 }
 
 header {
-    height: 210px;
-    padding-top: 50px;
-    padding-left: 150px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #252831;
+}
+
+.header-row {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.social {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    background-color: #252831;
 }
 
 footer {
@@ -46,8 +55,16 @@ footer {
     align-items: center;
 }
 
-.header-column {
-    margin: 0 60px 60px 0;
+.left-column {
+    text-align: right;
+    margin-right: 30px;
+    justify-self: end;
+}
+
+.right-column {
+    text-align: left;
+    margin-left: 30px;
+    justify-self: start;
 }
 
 .logo {
@@ -91,18 +108,11 @@ footer {
 }
 
 .social {
-    width: 40px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin-top: 360px;
-    margin-left: 15px;
+    margin: 15px 0;
 }
 
     .social a {
-        margin-bottom: 15px;
-        display: block;
+        margin: 0 20px;
     }
 
         .social a i {
@@ -111,7 +121,7 @@ footer {
         }
 
             .social a i:hover {
-                color: #636466;
+                color: white;
             }
 
 .project {
@@ -169,7 +179,7 @@ footer {
     margin-left: 150px;
 }
 
-.curriculum-vitae{
+.curriculum-vitae {
     margin-left: 130px;
 }
 
@@ -261,11 +271,30 @@ footer {
         justify-items: center;
     }
 
-    header {
-        flex-direction: column;
-        height: auto;
-        padding-left: 0;
-        padding-top: 20px;
+    .header-row {
+        display: grid;
+        margin: 30px 0;
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .left-column {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        grid-row: 2;
+    }
+
+    .right-column {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .social a {
+        margin: 0 8px;
     }
 
     .tag {
@@ -277,28 +306,6 @@ footer {
     .header-column {
         margin: 10px 0 0 0;
     }
-
-    .social {
-        position: relative;
-        background-color: #252831;
-        margin: 0;
-        padding: 10px 0 0 0;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-    }
-
-        .social a {
-            padding: 10px;
-            margin: 0;
-        }
-
-            .social a i {
-                color: white;
-            }
 
     footer {
         text-align: center;
@@ -324,7 +331,6 @@ footer {
         justify-items: center;
         align-items: center;
     }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -338,7 +344,6 @@ footer {
         text-align: center;
         margin: 50px;
     }
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -346,5 +351,4 @@ footer {
     .curriculum-header img {
         display: none;
     }
-    
 }
