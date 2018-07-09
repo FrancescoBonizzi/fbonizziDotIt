@@ -122,7 +122,7 @@ footer {
             }
 
 .project {
-    width: 193px;
+    width: 379px;
     height: 300px;
     text-align: center;
     display: flex;
@@ -161,7 +161,7 @@ footer {
     }
 
 .project-title, project-category, .project-comingsoon {
-    width: 193px;
+    width: 379px;
 }
 
 .main-content {
