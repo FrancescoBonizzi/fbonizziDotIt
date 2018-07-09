@@ -102,7 +102,7 @@
     height: 193px;
     background: url('../animations/curriculumvitaeexporter.png') center center no-repeat;
     background-size: 150px 150px;
-    transition: transform 0.8s ease;
+    transition: background-size 0.3s ease;
 }
 
     .curriculumvitaeexporter:hover {
