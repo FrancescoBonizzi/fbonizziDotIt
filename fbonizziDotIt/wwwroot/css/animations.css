@@ -82,7 +82,7 @@
 .ohmgame {
     display: block;
     width: 379px;
-    height: 167px;
+    height: 193px;
     background: url('../animations/ohm.png') left center;
     animation: ohmgame 0.8s steps(20) infinite;
     animation-play-state: paused;
