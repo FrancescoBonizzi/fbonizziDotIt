@@ -5,15 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\css\**" />
-    <Content Remove="wwwroot\css\**" />
-    <EmbeddedResource Remove="wwwroot\css\**" />
-    <None Remove="wwwroot\css\**" />
+    <Compile Remove="wwwroot\style\**" />
+    <Content Remove="wwwroot\style\**" />
+    <EmbeddedResource Remove="wwwroot\style\**" />
+    <None Remove="wwwroot\style\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\animations.css" />
-    <Content Include="wwwroot\css\page.css" />
+    <Content Include="wwwroot\style\animations.css" />
+    <Content Include="wwwroot\style\page.css" />
   </ItemGroup>
 
   <ItemGroup>
