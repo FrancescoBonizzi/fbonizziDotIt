@@ -160,8 +160,9 @@ footer {
         transition: color 0.8s ease, font-size 0.8s ease;
     }
 
-.project-title, project-category, .project-comingsoon {
+.project-title, .project-category, .project-comingsoon {
     width: 200px;
+    
 }
 
 .main-content {
