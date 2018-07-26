@@ -51,6 +51,9 @@ namespace fbonizziDotIt.Controllers
         public IActionResult Starfall()
             => View();
 
+        public IActionResult Rellow()
+            => View();
+
         public IActionResult ApplicationError()
             => View(new ApplicationErrorViewModel());
     }
