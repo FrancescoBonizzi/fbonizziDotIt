@@ -6,6 +6,6 @@ namespace fbonizziDotIt.Data.Infrastructure
 {
     public interface IDataProvider
     {
-        Task<WhatIWantToShowTheWorld> GetData(CancellationToken cancellationToken);
+        Task<CurriculumVitae> GetCurriculumVitae(CancellationToken cancellationToken);
     }
 }

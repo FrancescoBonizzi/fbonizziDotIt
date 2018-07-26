@@ -20,14 +20,14 @@ namespace fbonizziDotIt.Data
             _dataProvider = dataProvider ?? throw new ArgumentNullException(nameof(dataProvider));
         }
 
-        public Task<WhatIWantToShowTheWorld> GetData(CancellationToken cancellationToken)
+        public Task<CurriculumVitae> GetCurriculumVitae(CancellationToken cancellationToken)
         {
             return _cache.GetOrCreateAsync(
-                "WhatIWantToShowTheWorld-GetData",
+                "WebSiteInfos-GetData",
                 cacheEntry =>
                 {
                     cacheEntry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10);
-                    return _dataProvider.GetData(cancellationToken);
+                    return _dataProvider.GetCurriculumVitae(cancellationToken);
                 });
         }
     }

@@ -19,7 +19,7 @@ namespace fbonizziDotIt.Data
             _webSiteInfosJsonFilePath = "webSiteInfos.json";
         }
 
-        public async Task<WhatIWantToShowTheWorld> GetData(CancellationToken cancellationToken)
+        public async Task<CurriculumVitae> GetCurriculumVitae(CancellationToken cancellationToken)
         {
             var webSiteInfosJson = await File.ReadAllTextAsync(_webSiteInfosJsonFilePath);
             var webSiteInfos = JsonConvert.DeserializeObject<WebSiteInfos>(webSiteInfosJson);
@@ -32,9 +32,7 @@ namespace fbonizziDotIt.Data
             var curriculumVitaeJson = await curriculumVitaeResponse.Content.ReadAsStringAsync();
             var curriculumVitae = JsonConvert.DeserializeObject<CurriculumVitae>(curriculumVitaeJson);
 
-            return new WhatIWantToShowTheWorld(
-                webSiteInfos.Social,
-                curriculumVitae);
+            return curriculumVitae;
         }
     }
 }
