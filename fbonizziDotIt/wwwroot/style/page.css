@@ -178,13 +178,9 @@ footer {
 }
 
 .curriculum-vitae {
-    margin-left: 130px;
-}
-
-.curriculum-vitae {
     display: grid;
-    grid-template-columns: auto 1fr;
-    justify-items: start;
+    grid-template-columns: 1fr 1.8fr 1.8fr 1fr;
+    justify-items: center;
     align-items: start;
 }
 
@@ -216,25 +212,29 @@ footer {
 }
 
     .curriculum-section li {
-        margin-top: 2px;
+        margin-top: 8px;
         font-weight: normal;
+        background-color: white;
+        border-radius: 5px;
+        padding: 8px 15px;
     }
 
 .curriculum-section-title {
-    margin-bottom: 4px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-size: 20px;
     color: #dd3544;
 }
 
 .curriculum-header {
+    grid-column-start: 2;
+    grid-column-end: 2;
     display: grid;
     grid-template-rows: auto 1fr;
     justify-items: start;
     align-items: start;
     background-color: #252831;
     color: white;
-    margin: 0 30px;
 }
 
     .curriculum-header img {
@@ -255,9 +255,10 @@ footer {
         margin-bottom: 15px;
     }
 
-    .curriculum-story {
-        margin-right: 30px;
-    }
+.curriculum-story {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
 
 @media only screen and (max-width: 1100px) {
     .projects-container {
@@ -316,6 +317,8 @@ footer {
 
     .curriculum-story {
         margin: 0 30px;
+        grid-column-start: auto;
+        grid-column-end: auto;
     }
 
     .curriculum-vitae {
@@ -327,12 +330,16 @@ footer {
     }
 
     .curriculum-header {
-        margin-bottom: 10px;
+        margin: 5px 30px;
         grid-template-rows: none;
         grid-template-columns: 1fr auto;
         justify-items: center;
         align-items: center;
+        grid-column-start: auto;
+        grid-column-end: auto;
     }
+
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -348,7 +355,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     .curriculum-header img {
         display: none;
