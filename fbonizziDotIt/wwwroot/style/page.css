@@ -162,7 +162,6 @@ footer {
 
 .project-title, .project-category, .project-comingsoon {
     width: 200px;
-    
 }
 
 .main-content {
@@ -260,6 +259,74 @@ footer {
     grid-column-end: 3;
 }
 
+
+.project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-page-infos-container {
+    max-width: 620px;
+}
+
+.project-page img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.screenshots-container img {
+    margin-bottom: 15px;
+}
+
+.project-description {
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.project-little-title {
+    color: #dd3544;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-size: 14pt;
+    margin: 30px 0;
+}
+
+.project-description-list {
+    font-weight: normal;
+}
+
+    .project-description-list li {
+        background-color: #dd3544;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 10px 0;
+        color: white;
+    }
+
+.download-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.screenshots-container {
+    margin-top: 20px;
+}
+
+.download-links a {
+    align-self: center;
+}
+.download-links img {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 0;
+}
+
 @media only screen and (max-width: 1100px) {
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
@@ -269,6 +336,10 @@ footer {
 
 @media only screen and (max-width: 900px) {
 
+    .project-page-infos-container {
+        max-width: 100%;
+        margin: 0 50px;
+    }
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -338,8 +409,6 @@ footer {
         grid-column-start: auto;
         grid-column-end: auto;
     }
-
-
 }
 
 @media only screen and (max-width: 700px) {
