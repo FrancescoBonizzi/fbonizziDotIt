@@ -185,3 +185,16 @@
         transition: background-size 0.3s ease;
         background-size: 180px 180px;
     }
+
+
+
+
+
+.download-links img {
+    transition: max-width 0.3s ease;
+}
+
+    .download-links img:hover {
+        transition: max-width 0.3s ease;
+        max-width: 160px;
+    }
