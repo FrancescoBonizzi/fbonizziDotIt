@@ -318,6 +318,11 @@ footer {
     margin-top: 20px;
 }
 
+.developed-with {
+    color: #454545;
+    font-weight: normal;
+}
+
 .download-links a {
     align-self: center;
 }
