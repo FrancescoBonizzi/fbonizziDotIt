@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\style\animate.css" />
     <Content Include="wwwroot\style\animations.css" />
     <Content Include="wwwroot\style\page.css" />
   </ItemGroup>
