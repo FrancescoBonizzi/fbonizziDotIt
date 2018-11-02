@@ -8,23 +8,17 @@
     <meta name="description" content="Francesco Bonizzi developer website">
     <meta name="author" content="Francesco Bonizzi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="@ViewBag.Keywords">
+    <meta name="keywords" content="developer,software,videogames,indie,bonizzi">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="~/style/page.css">
-    <link rel="stylesheet" type="text/css" href="~/style/animations.css">
+    <link rel="stylesheet" type="text/css" href="style/page.css">
+    <link rel="stylesheet" type="text/css" href="style/animations.css">
 
-    <title>@ViewBag.MetaTitle</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121954893-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-121954893-1');
-    </script>
+    <title>Francesco Bonizzi - Software developer</title>
 
 </head>
 
@@ -88,7 +82,7 @@
             <div class="header-column right-column">
 
                 <ul>
-                    <li><a href="~/Pages/CurriculumVitae" class="static-link" title="Francesco Bonizzi's Curriculum Vitae">CURRICULUM VITAE</a></li>
+                    <li><a class="static-link" onclick="navigateAsync('pages/curriculum.html');" title="Francesco Bonizzi's Curriculum Vitae">CURRICULUM VITAE</a></li>
                 </ul>
 
             </div>
@@ -109,17 +103,19 @@
 
     </header>
 
+    <div id="async-content" class="main-content"></div>
 
-
-
-    <div class="main-content">
-        @RenderBody()
-    </div>
-
-    <footer>Copyright &copy; fbonizzi.it 2018. All Rights Reserved.</footer>
-
-    @RenderSection("Scripts", required: false)
+    <footer>Copyright &copy; fbonizzi.it 2018. All Rights Reserved. This website doesn't use cookies.</footer>
 
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+    // On first load I call always the home page
+    $(document).ready(function () {
+        navigateAsync('pages/home.html');
+    });
+
+</script>
