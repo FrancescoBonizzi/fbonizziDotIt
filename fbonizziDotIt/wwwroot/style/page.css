@@ -8,6 +8,10 @@ ol, ul {
     list-style: none;
 }
 
+h1, h2 {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
