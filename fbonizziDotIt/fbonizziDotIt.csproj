@@ -27,7 +27,6 @@
     <None Include="wwwroot\animations\infart.png" />
     <None Include="wwwroot\animations\lilloniz.png" />
     <None Include="wwwroot\animations\markindedark.png" />
-    <None Include="wwwroot\animations\ohm.png" />
     <None Include="wwwroot\animations\rellow.png" />
     <None Include="wwwroot\animations\starfall.png" />
     <None Include="wwwroot\pages\curriculum.html" />

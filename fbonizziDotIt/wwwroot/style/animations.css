@@ -79,33 +79,6 @@
 
 
 
-.ohmgame {
-    display: block;
-    width: 379px;
-    height: 193px;
-    background: url('../animations/ohm.png') left center;
-    animation: ohmgame 0.8s steps(20) infinite;
-    animation-play-state: paused;
-}
-
-    .ohmgame:hover {
-        animation-play-state: running;
-    }
-
-@keyframes ohmgame {
-
-    0% {
-        background-position: 0px;
-    }
-
-    100% {
-        background-position: -7580px;
-    }
-}
-
-
-
-
 
 .booli {
     display: block;
