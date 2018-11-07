@@ -9,22 +9,22 @@
         <div class="console-close">x</div>
     </div>
 
-    <div class="console-content">
+    <div itemscope itemtype="http://schema.org/Person" class="console-content">
 
         <div class="curriculum-section">
 
             <div class="curriculum-header">
 
-                <img class="curriculum-image" src="images/FrancescoBonizzi.jpg" alt="Francesco Bonizzi photo" />
+                <img itemprop="image" class="curriculum-image" src="images/FrancescoBonizzi.jpg" alt="Francesco Bonizzi photo" />
 
                 <ul>
-                    <li id="curriculumFullName" class="curriculum-important">FullName</li>
-                    <li id="curriculumHeadLine" class="curriculum-important">Headline</li>
+                    <li itemprop="name" id="curriculumFullName" class="curriculum-important">FullName</li>
+                    <li itemprop="jobTitle" id="curriculumHeadLine" class="curriculum-important">Headline</li>
 
-                    <li id="curriculumCurrentPosition" class="curriculum-important">CurrentPosition</li>
-                    <li id="curriculumAddress">Address</li>
-                    <li id="curriculumBirthDate">Birth date</li>
-                    <li><a id="curriculumEmail" title="Contact me" alt="Francesco Bonizzi email" href="mailto:@Model.CurriculumVitae.Email">Email</a></li>
+                    <li itemprop="workLocation" id="curriculumCurrentPosition" class="curriculum-important">CurrentPosition</li>
+                    <li itemprop="address" id="curriculumAddress">Address</li>
+                    <li itemprop="birthDate" id="curriculumBirthDate">Birth date</li>
+                    <li><a itemprop="email" id="curriculumEmail" title="Contact me" alt="Francesco Bonizzi email" href="mailto:@Model.CurriculumVitae.Email">Email</a></li>
                 </ul>
 
             </div>
