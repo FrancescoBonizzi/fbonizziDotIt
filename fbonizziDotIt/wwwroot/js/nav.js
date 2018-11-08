@@ -65,23 +65,23 @@ function populateCurriculumPage(curriculumVitaeJson) {
     $('#curriculumEmail').attr("href", "mailto: " + curriculumVitaeJson.Email);
 
     curriculumVitaeJson.Experiences.forEach(function (experience) {
-        $("#curriculumVitaeExperiences").append('<li>&middot; ' + getExperienceDescription(experience) + '</li>');
+        $("#curriculumVitaeExperiences").append(`<li>&middot; ${getExperienceDescription(experience)}</li>`);
     });
 
     curriculumVitaeJson.Education.forEach(function (education) {
-        $("#curriculumVitaeEducation").append('<li>&middot; ' + getExperienceDescription(education) + '</li>');
+        $("#curriculumVitaeEducation").append(`<li>&middot; ${getExperienceDescription(education)}</li>`);
     });
 
     curriculumVitaeJson.Skills.forEach(function (skill) {
-        $("#curriculumVitaeSkills").append('<li>&middot; ' + skill + '</li>');
+        $("#curriculumVitaeSkills").append(`<li>&middot; ${skill}</li>`);
     });
 
     curriculumVitaeJson.Projects.forEach(function (project) {
-        $("#curriculumVitaeProjects").append('<li>&middot; ' + '<a href=' + project.Url + '"' + 'alt="' + project.Title + '"' + 'title="' + project.Title + '"> ' + project.Title + '</a></li>');
+        $("#curriculumVitaeProjects").append(`<li>&middot; <a href="${project.Url}" alt="Project title" title="Project link">${project.Title}</a></li>`);
     });
 
     curriculumVitaeJson.Hobbies.forEach(function (hobby) {
-        $("#curriculumVitaeHobbies").append('<li>&middot; ' + hobby + '</li>');
+        $("#curriculumVitaeHobbies").append(`<li>&middot; ${hobby}</li>`);
     });
 }
 
@@ -90,9 +90,9 @@ function getExperienceDescription(experience)
     var description = experience.Description;
 
     if (experience.From !== undefined) {
-        description = description + " from " + new Date(experience.From).getFullYear();
+        description = `${description} from ${new Date(experience.From).getFullYear()}`;
         if (experience.To !== undefined)
-            description = description + " to " + + new Date(experience.To).getFullYear();
+            description = `${description} to ${new Date(experience.To).getFullYear()}`;
     }
 
     return description;
