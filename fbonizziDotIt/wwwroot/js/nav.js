@@ -77,7 +77,7 @@ function populateCurriculumPage(curriculumVitaeJson) {
     });
 
     curriculumVitaeJson.Projects.forEach(function (project) {
-        $("#curriculumVitaeProjects").append(`<li>&middot; <a href="${project.Url}" alt="Project title" title="Project link">${project.Title}</a></li>`);
+        $("#curriculumVitaeProjects").append(`<li>&middot; <a href="${project.Url}" alt="Project title" title="Project link" rel="nofollow">${project.Title}</a></li>`);
     });
 
     curriculumVitaeJson.Hobbies.forEach(function (hobby) {
