@@ -1,5 +1,10 @@
 ﻿var _currentPageUrl = null;
 
+// On first load I call always the home page
+$(document).ready(function () {
+    navigateAsync('pages/home.html');
+});
+
 function navigateAsync(url, thenFunction) {
 
     if (_currentPageUrl !== url) {
@@ -19,19 +24,6 @@ function navigateAsync(url, thenFunction) {
     }
 
     return false;
-}
-
-function reloadAsync() {
-
-    $.get(_currentPageUrl)
-        .done(function (response) {
-
-            $("#async-content").html(response);
-
-        });
-
-    return false;
-
 }
 
 function loadCurriculumVitaeJson() {
