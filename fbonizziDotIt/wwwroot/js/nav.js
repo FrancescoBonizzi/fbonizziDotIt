@@ -1,9 +1,15 @@
 ﻿var _currentPageUrl = null;
 
-// On first load I call always the home page
 $(document).ready(function () {
 
-    navigateAsync('home');
+    var currentPageUrl = window.location.href;
+    var splitted = currentPageUrl.split('#');
+    if (splitted.length > 1) {
+        navigateAsync(splitted[1]);
+    }
+    else {
+        navigateAsync('home');
+    }
 
     // Quando l'utente preme back
     window.addEventListener('popstate', function (e) {
@@ -16,8 +22,6 @@ $(document).ready(function () {
 
 });
 
-
-
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
@@ -26,6 +30,7 @@ function navigateAsync(url, thenFunction) {
 
     var pageName = url;
     url = `pages/${pageName}.html`;
+    var pageNameForPush = `#${pageName}`;
 
     if (_currentPageUrl !== url) {
 
@@ -40,7 +45,7 @@ function navigateAsync(url, thenFunction) {
                 }
 
                 document.title = `Francesco Bonizzi | ${capitalizeFirstLetter(pageName)}`;
-                history.pushState(pageName, null, pageName);
+                history.pushState(pageName, null, pageNameForPush);
 
             });
 
