@@ -463,4 +463,9 @@ footer {
         text-align: center;
         margin: 50px;
     }
+
+    .project {
+        padding-right: 19px;
+        padding-left: 19px;
+    } 
 }
