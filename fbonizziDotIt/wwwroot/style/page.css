@@ -478,4 +478,9 @@ footer {
         transform: scale(0.9);
         transform-origin: top;
     }
+
+    .curriculum-image {
+        max-width: 66px;
+        align-self: start;
+    }
 }
