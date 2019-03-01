@@ -468,4 +468,14 @@ footer {
         padding-right: 19px;
         padding-left: 19px;
     } 
+
+    #async-content {
+        margin-top: 20px;
+    }
+
+    .curriculum-vitae {
+        font-size: 12px;
+        transform: scale(0.9);
+        transform-origin: top;
+    }
 }

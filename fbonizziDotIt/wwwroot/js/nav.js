@@ -57,14 +57,14 @@ function navigateAsync(url, thenFunction) {
 function loadCurriculumVitaeJson() {
 
     // A little cache
-    var curriculumVitaeJsonRaw = localStorage['curriculumVitaeJsonRaw'];
+    var curriculumVitaeJsonRaw = sessionStorage['curriculumVitaeJsonRaw'];
 
     if (curriculumVitaeJsonRaw === undefined) {
 
         $.get("https://raw.githubusercontent.com/FrancescoBonizzi/CurriculumVitaeExporter/master/FrancescoBonizziConsoleCurriculum/FrancescoBonizzi-CV.json")
             .done(function (response) {
                 curriculumVitaeJsonRaw = response;
-                localStorage['curriculumVitaeJsonRaw'] = curriculumVitaeJsonRaw;
+                sessionStorage['curriculumVitaeJsonRaw'] = curriculumVitaeJsonRaw;
                 populateCurriculumPage(JSON.parse(curriculumVitaeJsonRaw));
             });
 
