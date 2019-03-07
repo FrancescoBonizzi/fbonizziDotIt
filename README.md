@@ -8,3 +8,5 @@ It shows:
 - My portfolio 
 - My [curriculum vitae](https://github.com/FrancescoBonizzi/CurriculumVitaeExporter).
 - My contact links
+
+[![Build status](https://flowsoftproject.visualstudio.com/GithubOpenSource/_apis/build/status/fbonizziDotIt)](https://flowsoftproject.visualstudio.com/GithubOpenSource/_build/latest?definitionId=20)
