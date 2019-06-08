@@ -16,6 +16,7 @@
     <Content Include="wwwroot\style\animate.css" />
     <Content Include="wwwroot\style\animations.css" />
     <Content Include="wwwroot\style\page.css" />
+    <Content Include="wwwroot\style\page.less" />
     <Content Include="wwwroot\style\site.min.css" />
   </ItemGroup>
 
