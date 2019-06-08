@@ -14,7 +14,7 @@
 @background_color_3: white;
 @background_color_4: #eeeeee;
 @background_color_5: #0078d7;
-
+ 
 @font-face {
     font-family: 'Lato';
     src: url('../webfonts/lato-regular-webfont.woff2') format('woff2'), url('../webfonts/lato-regular-webfont.woff') format('woff');
@@ -912,6 +912,24 @@ video {
     max-width: 130px;
     align-self: center;
     padding-right: 15px;
+}
+
+#ie-notsupported {
+    display: none;
+    font-size: 40px;
+    margin: 40px;
+}
+
+/* IE-only styles here. Works for IS 10 & IE 11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    #ie-notsupported {
+        display: block;
+    }
+
+    header, #async-content, footer {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
