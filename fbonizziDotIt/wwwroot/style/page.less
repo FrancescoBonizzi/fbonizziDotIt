@@ -1,26 +1,19 @@
-﻿@color_1: #b1b3b6;
-@color_2: #fdf50e;
-@color_3: white;
+﻿@inactive_button_background_color: #b1b3b6;
+@logo_color: #fdf50e;
+@hover_button_background_color: white;
 @color_4: #f13243;
 @color_5: #20baff;
 @color_6: #5b6a97;
 @color_7: black;
 @color_8: #97999c;
 @color_9: #454545;
-@font_family_1: 'Lato', sans-serif;
-@font_family_2: "Consolas", monospace;
-@background_color_1: #252831;
+@site_font: 'Consolas', monospace;
+@header_color: #1f1f1f;
+@body_color: #f2f2f2;
 @background_color_2: #3d424f;
 @background_color_3: white;
 @background_color_4: #eeeeee;
 @background_color_5: #0078d7;
- 
-@font-face {
-    font-family: 'Lato';
-    src: url('../webfonts/lato-regular-webfont.woff2') format('woff2'), url('../webfonts/lato-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 html {
     margin: 0;
@@ -32,11 +25,11 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: @font_family_1;
+    font-family: @site_font;
     font-weight: bold;
     letter-spacing: 0.6px;
     line-height: 24px;
-    background: #ebebeb;
+    background: @body_color;
 }
 
 div {
@@ -73,14 +66,14 @@ h1 {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h2 {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h3 {
@@ -469,7 +462,7 @@ footer {
     border: 0;
     text-align: center;
     margin: 30px 120px;
-    color: @color_1;
+    color: @inactive_button_background_color;
     font-size: 12px;
 }
 
@@ -481,7 +474,7 @@ header {
     grid-template-rows: 1fr auto;
     justify-items: center;
     align-items: center;
-    background-color: @background_color_1;
+    background-color: @header_color;
 }
 
 hgroup {
@@ -568,20 +561,19 @@ video {
 
         i {
             transition: color 0.3s ease;
-            color: @color_1;
+            color: @inactive_button_background_color;
 
             &:hover {
-                color: @color_3;
+                color: @hover_button_background_color;
             }
         }
     }
 }
 
 .projects-container {
-    margin: 0 20px;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
 
@@ -609,15 +601,15 @@ video {
 }
 
 .logo-container {
-    fill: #fdf50e;
-    color: @color_2;
+    fill: @logo_color;
+    color: @logo_color;
     transition: fill 0.4s ease, color 0.4s ease;
     cursor: pointer;
     text-align: center;
 
     &:hover {
-        color: @color_3;
-        fill: white;
+        color: @hover_button_background_color;
+        fill: @hover_button_background_color;
         transition: fill 0.4s ease, color 0.4s ease;
     }
 }
@@ -629,7 +621,7 @@ video {
     cursor: default;
 
     &:hover {
-        color: @color_3;
+        color: @hover_button_background_color;
     }
 }
 
@@ -644,13 +636,13 @@ video {
 
 .static-link {
     &:hover {
-        color: @color_3;
+        color: @hover_button_background_color;
     }
 }
 
 .store-badge {
-    background-color: @background_color_1;
-    color: @color_3;
+    background-color: @header_color;
+    color: @hover_button_background_color;
     padding: 6px 12px 6px 6px;
     cursor: pointer;
     font-size: 10px;
@@ -663,7 +655,7 @@ video {
     align-self: center;
 
     a {
-        color: @color_3 !important;
+        color: @hover_button_background_color !important;
     }
 
     i {
@@ -697,16 +689,17 @@ video {
 
 .project {
     display: grid;
-    width: 300px;
+    width: 270px;
+    margin: 10px 0;
     grid-template-rows: 50px 1fr 100px 50px auto;
     background-color: @background_color_3;
-    border-radius: 3px;
+    border-radius: 10px;
     justify-items: left;
     padding: 30px;
     align-items: flex-start;
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    /*-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);*/
 }
 
 .project-header {
@@ -777,7 +770,7 @@ video {
 }
 
 .main-content {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .socialyoutube {
@@ -812,7 +805,7 @@ video {
 }
 
 .console-title {
-    color: @color_3;
+    color: @hover_button_background_color;
     font-weight: normal;
     justify-self: center;
     align-self: center;
@@ -822,7 +815,7 @@ video {
 .console-maximize {
     background: transparent;
     width: 46px;
-    color: @color_3;
+    color: @hover_button_background_color;
     text-align: center;
     cursor: default;
     font-size: 14px;
@@ -836,7 +829,7 @@ video {
 .console-minimize {
     background: transparent;
     width: 46px;
-    color: @color_3;
+    color: @hover_button_background_color;
     text-align: center;
     cursor: default;
     line-height: 25px;
@@ -849,7 +842,7 @@ video {
 .console-close {
     background: transparent;
     width: 46px;
-    color: @color_3;
+    color: @hover_button_background_color;
     text-align: center;
     cursor: default;
     font-size: 17px;
@@ -871,16 +864,15 @@ video {
 .console-content {
     width: 940px;
     background: black;
-    font-family: @font_family_2;
-    color: @color_3;
+    color: @hover_button_background_color;
 }
 
 .curriculum-section {
     a {
-        color: @color_3;
+        color: @hover_button_background_color;
 
         &:hover {
-            color: @color_2;
+            color: @logo_color;
         }
     }
 
@@ -893,9 +885,8 @@ video {
 
 .curriculum-section-title {
     font-size: 20px;
-    color: @color_2;
+    color: @logo_color;
     font-weight: normal;
-    font-family: @font_family_2;
 }
 
 .curriculum-header {
@@ -903,7 +894,7 @@ video {
 }
 
 .curriculum-important {
-    color: @color_2;
+    color: @logo_color;
 }
 
 .curriculum-image {
