@@ -213,8 +213,6 @@
 
 
 
-
-
 .minielectric {
     display: block;
     width: 193px;
@@ -228,3 +226,30 @@
         transition: background-size 0.3s ease;
         background-size: 180px 180px;
     }
+
+
+
+
+.darwinizator {
+    display: block;
+    width: 193px;
+    height: 193px;
+    background: url('../animations/darwinizator.png') left center;
+    animation: darwinizator 0.8s steps(21) infinite;
+    animation-play-state: paused;
+}
+
+    .darwinizator:hover {
+        animation-play-state: running;
+    }
+
+@keyframes darwinizator {
+
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -4053px;
+    }
+}
