@@ -643,7 +643,7 @@ video {
 .store-badge {
     background-color: @header_color;
     color: @hover_button_background_color;
-    padding: 6px 12px 6px 6px;
+    padding: 2px 8px 2px 4px;
     cursor: pointer;
     font-size: 10px;
     margin: 0 5px 0 0;
@@ -697,9 +697,7 @@ video {
     justify-items: left;
     padding: 30px;
     align-items: flex-start;
-    /*-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);*/
+    border: 1px solid #dedede;
 }
 
 .project-header {
@@ -741,9 +739,10 @@ video {
 .project-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
+    justify-content: space-between;
+    align-content: flex-end;
     width: 100%;
+    align-self: end;
 }
 
 .project-link {
@@ -920,6 +919,12 @@ video {
 
     header, #async-content, footer {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1910px) {
+    .projects-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
