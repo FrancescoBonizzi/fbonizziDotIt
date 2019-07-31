@@ -105,8 +105,7 @@ function populateCurriculumPage(curriculumVitaeJson) {
     });
 }
 
-function getExperienceDescription(experience)
-{
+function getExperienceDescription(experience) {
     var description = experience.Description;
 
     if (experience.From !== undefined) {

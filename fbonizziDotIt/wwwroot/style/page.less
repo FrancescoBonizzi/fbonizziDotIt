@@ -1,8 +1,8 @@
 ﻿@inactive_button_background_color: #b1b3b6;
 @logo_color: #fdf50e;
 @hover_button_background_color: white;
-@color_4: #f13243;
-@color_5: #20baff;
+@header_tags_color: #f13243;
+@header_curriculum_color: #20baff;
 @color_6: #5b6a97;
 @color_7: black;
 @color_8: #97999c;
@@ -18,7 +18,7 @@
 html {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0; 
 }
 
 body {
@@ -615,26 +615,26 @@ video {
 }
 
 .tag {
-    transition: color 0.4s ease;
-    color: @color_4;
-    text-decoration: none;
-    cursor: default;
+    transition: all 0.4s ease;
+    color: @header_tags_color;
 
     &:hover {
         color: @hover_button_background_color;
     }
 }
 
+
 .header-column {
     .static-link {
-        transition: color 0.4s ease;
-        color: @color_5;
         text-decoration: none;
         cursor: pointer;
     }
 }
 
-.static-link {
+.curriulum-link {
+    transition: color 0.4s ease;
+    color: @header_curriculum_color;
+
     &:hover {
         color: @hover_button_background_color;
     }
