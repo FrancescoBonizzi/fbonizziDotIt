@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\PublishProfiles\**" />
     <Compile Remove="wwwroot\style\**" />
+    <Content Remove="Properties\PublishProfiles\**" />
     <Content Remove="wwwroot\style\**" />
+    <EmbeddedResource Remove="Properties\PublishProfiles\**" />
     <EmbeddedResource Remove="wwwroot\style\**" />
+    <None Remove="Properties\PublishProfiles\**" />
     <None Remove="wwwroot\style\**" />
   </ItemGroup>
 
@@ -18,10 +22,6 @@
     <Content Include="wwwroot\style\page.css" />
     <Content Include="wwwroot\style\page.less" />
     <Content Include="wwwroot\style\site.min.css" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,10 +48,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BuildBundlerMinifier" Version="2.9.406" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>
