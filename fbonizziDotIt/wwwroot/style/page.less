@@ -631,7 +631,7 @@ video {
     }
 }
 
-.curriulum-link {
+.curriculum-link, .curriculum-link:link, .curriculum-link:visited, .curriculum-link:active {
     transition: color 0.4s ease;
     color: @header_curriculum_color;
 
@@ -789,6 +789,7 @@ video {
     grid-template-rows: auto 1fr;
     justify-items: center;
     align-items: center;
+    margin-top: 10px;
 
     span {
         display: block;
@@ -917,7 +918,7 @@ video {
         display: block;
     }
 
-    header, #async-content, footer {
+    header, #content-container, footer {
         display: none;
     }
 }
@@ -1013,7 +1014,7 @@ video {
         padding-left: 19px;
     }
 
-    #async-content {
+    #content-container {
         margin-top: 20px;
     }
 

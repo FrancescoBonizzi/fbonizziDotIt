@@ -7,17 +7,5 @@
       "wwwroot/style/fontawesome.min.css",
       "wwwroot/style/page.css"
     ]
-  },
-  {
-    "outputFileName": "wwwroot/js/site.min.js",
-    "inputFiles": [
-      "wwwroot/js/nav.js"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    "sourceMap": false,
-    "includeInProject": true
   }
 ]
