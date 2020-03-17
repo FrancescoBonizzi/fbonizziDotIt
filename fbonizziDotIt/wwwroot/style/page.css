@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Consolas', monospace;
+  font-family: "Consolas", monospace;
   font-weight: bold;
   letter-spacing: 0.6px;
   line-height: 24px;
@@ -656,7 +656,7 @@ video {
   display: block;
 }
 .console-icon {
-  background-image: url('../images/console-application-icon.jpg');
+  background-image: url("../images/console-application-icon.jpg");
   width: 27px;
   height: 25px;
   justify-self: center;
