@@ -751,6 +751,28 @@ video {
   font-size: 40px;
   margin: 40px;
 }
+
+.mark-body {
+  background-color: #181322;
+  display: grid;
+  grid-template-rows: auto auto
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.mark-content {
+  display: grid;
+  grid-template-rows: auto auto
+  align-items: center;
+  justify-items: center;
+}
+
+.reponsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
 /* IE-only styles here. Works for IS 10 & IE 11*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   #ie-notsupported {
