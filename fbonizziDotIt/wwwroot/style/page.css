@@ -608,9 +608,7 @@ video {
 .socialandroid {
   display: none !important;
 }
-.error-message {
-  margin-left: 150px;
-}
+
 .curriculum-vitae {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -791,11 +789,19 @@ video {
     margin: 0 0 15px 0;
   }
 }
+
 @media only screen and (max-width: 800px) {
 
-  .error-message {
-    text-align: center;
-    margin: 50px;
+  .logo {
+    height: 70px;
+  }
+
+  h1, .static-link {
+    font-size: 13px;
+  }
+
+  .more-details a {
+    padding-left: 10px;
   }
 
   .curriculum-vitae {
@@ -807,4 +813,5 @@ video {
     max-width: 66px;
     align-self: start;
   }
+
 }
