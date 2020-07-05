@@ -469,6 +469,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 10px;
 }
 .projects-container a {
   color: #454545;
@@ -516,57 +517,42 @@ video {
 .curriculum-link:active:hover {
   color: #82d7ff;
 }
-.store-badge {
-  background-color: #1f1f1f;
-  color: white;
-  padding: 2px 8px 2px 4px;
-  cursor: pointer;
-  font-size: 10px;
-  margin: 0 5px 0 0;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-  align-self: center;
-}
-.store-badge a {
-  color: white !important;
-}
-.store-badge i {
-  padding: 6px;
-  font-size: 16px;
-  font-weight: normal;
-}
-.store-badge:hover {
-  background-color: #3d424f;
-}
+
 .more-details {
   width: 100%;
   text-align: right;
-  align-self: center;
-  height: 24px;
   text-transform: uppercase;
+  align-self: end;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
 }
+
+.more-details a {
+  color: #7a7a7a !important;
+  line-height: 0 !important;
+  padding-left: 15px;
+}
+
 .more-details a:hover {
-  color: #5b6a97 !important;
+  color: black !important;
 }
 .project {
   display: grid;
   width: 270px;
   margin: 10px;
-  grid-template-rows: 50px 1fr 100px 50px auto;
+  grid-template-rows: 74px auto auto;
   background-color: white;
   border-radius: 10px;
   justify-items: left;
-  padding: 30px;
+  padding: 20px;
   align-items: flex-start;
   border: 1px solid #dedede;
 }
 .project-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 .project-title {
   font-weight: bold;
@@ -579,13 +565,21 @@ video {
   font-weight: normal;
 }
 .project-description {
-  color: #97999c;
+  color: #343536;
   font-size: 13px;
   font-weight: normal;
+  text-overflow: ellipsis;
+  height: 110px;
+  text-align: justify;
 }
 .project-image {
-  justify-self: center;
-  margin: 15px 0;
+  width: 64px;
+  margin-right: 10px;
+}
+
+.project-image img {
+  width: 64px;
+  border-radius: 10px;
 }
 .project-divisor {
   height: 2px;
@@ -600,21 +594,7 @@ video {
   width: 100%;
   align-self: end;
 }
-.project-link {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-}
-.project-link img {
-  width: 100px;
-}
-.project-infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
-  width: 100%;
-}
+
 .centered-horizontally {
   width: 50%;
   margin: 0 auto;
