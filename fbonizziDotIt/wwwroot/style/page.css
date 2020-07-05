@@ -443,7 +443,7 @@ video {
 }
 .header-row {
   display: grid;
-  margin: 30px 0;
+  margin: 15px 0 15px 0;
   grid-template-columns: 1fr auto 1fr;
   justify-items: center;
   align-items: center;
@@ -451,13 +451,13 @@ video {
 .social {
   display: flex;
   flex-direction: row;
-  margin: 15px 0;
+  margin: 10px 0 15px 0;
+  font-size: 25px;
 }
 .social a {
   margin: 0 20px;
 }
 .social a i {
-  transition: color 0.3s ease;
   color: #b1b3b6;
 }
 .social a i:hover {
@@ -465,10 +465,10 @@ video {
 }
 .projects-container {
   margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .projects-container a {
   color: #454545;
@@ -491,21 +491,14 @@ video {
 .logo-container {
   fill: #fdf50e;
   color: #fdf50e;
-  transition: fill 0.4s ease, color 0.4s ease;
   cursor: pointer;
   text-align: center;
 }
-.logo-container:hover {
-  color: white;
-  fill: white;
-  transition: fill 0.4s ease, color 0.4s ease;
-}
 .tag {
-  transition: all 0.4s ease;
   color: #f13243;
 }
 .tag:hover {
-  color: white;
+  color: #ff828c;
 }
 .header-column .static-link {
   text-decoration: none;
@@ -515,14 +508,13 @@ video {
 .curriculum-link:link,
 .curriculum-link:visited,
 .curriculum-link:active {
-  transition: color 0.4s ease;
   color: #20baff;
 }
 .curriculum-link:hover,
 .curriculum-link:link:hover,
 .curriculum-link:visited:hover,
 .curriculum-link:active:hover {
-  color: white;
+  color: #82d7ff;
 }
 .store-badge {
   background-color: #1f1f1f;
@@ -535,7 +527,6 @@ video {
   -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
-  transition: background-color 0.8s ease;
   align-self: center;
 }
 .store-badge a {
@@ -548,7 +539,6 @@ video {
 }
 .store-badge:hover {
   background-color: #3d424f;
-  transition: background-color 0.8s ease;
 }
 .more-details {
   width: 100%;
@@ -557,17 +547,13 @@ video {
   height: 24px;
   text-transform: uppercase;
 }
-.more-details a {
-  transition: color 0.8s ease;
-}
 .more-details a:hover {
   color: #5b6a97 !important;
-  transition: color 0.8s ease;
 }
 .project {
   display: grid;
   width: 270px;
-  margin: 10px 0;
+  margin: 10px;
   grid-template-rows: 50px 1fr 100px 50px auto;
   background-color: white;
   border-radius: 10px;
@@ -784,25 +770,8 @@ video {
     display: none;
   }
 }
-@media only screen and (max-width: 1910px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 @media only screen and (max-width: 900px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-  }
   .console-content {
     width: 100%;
   }
@@ -811,7 +780,6 @@ video {
   }
   .header-row {
     display: grid;
-    margin: 30px 0;
     grid-template-columns: none;
     grid-template-rows: auto auto auto;
     justify-items: center;
@@ -821,12 +789,14 @@ video {
     text-align: center;
     justify-self: center;
     align-self: center;
+    margin: 0;
     grid-row: 2;
   }
   .right-column {
     text-align: center;
     justify-self: center;
     align-self: center;
+    margin: 0;
   }
   .social a {
     margin: 0 8px;
@@ -836,30 +806,18 @@ video {
     float: left;
     margin-right: 10px;
   }
-  .header-column {
-    margin: 10px 0 0 0;
-  }
   footer {
     text-align: center;
     margin: 0 0 15px 0;
   }
 }
 @media only screen and (max-width: 800px) {
-  .projects-container {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0;
-  }
+
   .error-message {
     text-align: center;
     margin: 50px;
   }
-  .project {
-    padding-right: 19px;
-    padding-left: 19px;
-  }
-  #content-container {
-    margin-top: 20px;
-  }
+
   .curriculum-vitae {
     font-size: 12px;
     transform: scale(0.9);
