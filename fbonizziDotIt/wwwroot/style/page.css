@@ -615,6 +615,7 @@ video {
   justify-items: center;
   align-items: center;
   margin-top: 10px;
+  font-size: 13px;
 }
 .curriculum-vitae span {
   display: block;
@@ -693,7 +694,7 @@ video {
   font-weight: normal;
 }
 .curriculum-section-title {
-  font-size: 20px;
+  font-size: 16px;
   color: #fdf50e;
   font-weight: normal;
 }
@@ -805,10 +806,10 @@ video {
   }
 
   .curriculum-vitae {
-    font-size: 12px;
     transform: scale(0.9);
     transform-origin: top;
   }
+
   .curriculum-image {
     max-width: 66px;
     align-self: start;
