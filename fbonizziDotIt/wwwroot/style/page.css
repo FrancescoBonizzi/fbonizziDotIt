@@ -705,7 +705,7 @@ video {
   color: white;
 }
 .curriculum-section {
-  padding: 25px 0 0 25px;
+  padding: 25px 25px 0 25px;
 }
 .curriculum-section a {
   color: white;
@@ -831,9 +831,17 @@ video {
     height: 70px;
   }
 
-/*  h1, .static-link {
-    font-size: 13px;
-  } */
+  .static-link {
+    font-size: 14px;
+  }
+
+  .social {
+    font-size: 16px; 
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
 
   .more-details a {
     padding-left: 10px;
