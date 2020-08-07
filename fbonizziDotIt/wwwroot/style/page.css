@@ -381,8 +381,7 @@ header {
   padding: 0;
   border: 0;
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  justify-items: center;
+  grid-template-columns: 1fr;  
   align-items: top;
   background-color: #1f1f1f;
   height: 248px;
@@ -392,17 +391,19 @@ header {
   background-size: cover;
 }
 
+.header-image-container, #header-image {
+  position: absolute;
+  right: 0;
+}
+
 .header-title-container {
-  align-self: end;
-  padding-bottom: 32px;
   display: grid;
-  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: 1fr auto 1fr;
+  align-self: start;
   justify-items: center;
-  align-items: end;
-  border-radius: 10px;
-  background-color: rgba(255, 255,255, 0.5);
+  align-items: center;
   padding: 10px;
-  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .header-title {
@@ -410,8 +411,8 @@ header {
   font-size: 40px;
   font-weight: lighter;
   letter-spacing: -2px;
+  margin: 0 10px 0 10px;
 }
-
 
 hgroup {
   margin: 0;
@@ -472,8 +473,8 @@ video {
 .social {
   display: flex;
   flex-direction: row;
-  margin: 10px 0 15px 0;
-  font-size: 25px;
+  font-size: 20px;
+  justify-self: end;
 }
 .social a {
   margin: 0 20px;
@@ -492,22 +493,14 @@ video {
   text-decoration: none;
   cursor: pointer;
 }
-.left-column {
-  text-align: right;
-  margin-right: 30px;
-  justify-self: end;
-}
-.right-column {
-  text-align: left;
-  margin-left: 30px;
-  justify-self: start;
-}
+
 .tag {
   color: #f13243;
 }
 .tag:hover {
   color: #ff828c;
 }
+
 .header-column .static-link {
   text-decoration: none;
   cursor: pointer;
@@ -517,29 +510,35 @@ video {
 .curriculum-link:link,
 .curriculum-link:visited,
 .curriculum-link:active,
-.social a i {
-  color: #ac5e40;
-}
-.curriculum-link:hover,
-.curriculum-link:link:hover,
-.curriculum-link:visited:hover,
-.curriculum-link:active:hover,
-.social a i:hover {
-  color: #d86538;
-}
-
-
+.social a i,
 .title-link,
 .title-link:link,
 .title-link:visited,
 .title-link:active {
-  color: black;
+  color: rgb(65, 65, 65);
 }
+
 .title-link:hover,
 .title-link:link:hover,
 .title-link:visited:hover,
 .title-link:active:hover {
-  color: #854c4b;
+  color: #0d8bcf;
+}
+
+.social a i:hover {
+  color: #67d35b;
+}
+
+.curriculum-link:hover,
+.curriculum-link:link:hover,
+.curriculum-link:visited:hover,
+.curriculum-link:active:hover {
+  color: #fa6a0a;
+}
+
+.curriculum-link {
+  justify-self: start;
+  padding-left: 15px;
 }
 
 .more-details {
@@ -775,26 +774,27 @@ video {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1250px) {
 
   .whitespace-div {
     display: none;
   }
 
-  header {
-    grid-template-columns: none;
-    grid-template-rows: none;
-    /* TODO: cambio opacità immagine background o cambio colori scritta FBONIZZI, o addirittura cambio posizione*/
-  }
-
 .header-title-container {
-  align-self: start;
-  margin-top: 15px;
+  grid-template-columns: none;
+  grid-template-rows: auto auto auto;
 }
 
-  .header-image-container, #header-image {
-    position: absolute;
-    right: 0;
+  .social, .curriculum-link {
+    justify-self: center;
+  }
+
+  .social {
+    padding-bottom: 10px;
+  }
+
+  .curriculum-link {
+    padding-top: 8px;
   }
 
   #header-image {
@@ -831,9 +831,9 @@ video {
     height: 70px;
   }
 
-  h1, .static-link {
+/*  h1, .static-link {
     font-size: 13px;
-  }
+  } */
 
   .more-details a {
     padding-left: 10px;
