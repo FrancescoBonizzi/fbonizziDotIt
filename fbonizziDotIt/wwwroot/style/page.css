@@ -381,11 +381,38 @@ header {
   padding: 0;
   border: 0;
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr auto auto;
   justify-items: center;
-  align-items: center;
+  align-items: top;
   background-color: #1f1f1f;
+  height: 248px;
+  background: url('../images/FrancescoBonizzi-header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.header-title-container {
+  align-self: end;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  justify-items: center;
+  align-items: end;
+  border-radius: 10px;
+  background-color: rgba(255, 255,255, 0.5);
+  padding: 10px;
+  margin: 5px;
+}
+
+.header-title {
+  text-align: left;
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: -2px;
+}
+
+
 hgroup {
   margin: 0;
   padding: 0;
@@ -441,13 +468,7 @@ video {
   padding: 0;
   border: 0;
 }
-.header-row {
-  display: grid;
-  margin: 15px 0 15px 0;
-  grid-template-columns: 1fr auto 1fr;
-  justify-items: center;
-  align-items: center;
-}
+
 .social {
   display: flex;
   flex-direction: row;
@@ -457,12 +478,7 @@ video {
 .social a {
   margin: 0 20px;
 }
-.social a i {
-  color: #b1b3b6;
-}
-.social a i:hover {
-  color: white;
-}
+
 .projects-container {
   margin: 0;
   display: flex;
@@ -486,15 +502,6 @@ video {
   margin-left: 30px;
   justify-self: start;
 }
-.logo {
-  height: 100px;
-}
-.logo-container {
-  fill: #fdf50e;
-  color: #fdf50e;
-  cursor: pointer;
-  text-align: center;
-}
 .tag {
   color: #f13243;
 }
@@ -505,17 +512,34 @@ video {
   text-decoration: none;
   cursor: pointer;
 }
+
 .curriculum-link,
 .curriculum-link:link,
 .curriculum-link:visited,
-.curriculum-link:active {
-  color: #20baff;
+.curriculum-link:active,
+.social a i {
+  color: #ac5e40;
 }
 .curriculum-link:hover,
 .curriculum-link:link:hover,
 .curriculum-link:visited:hover,
-.curriculum-link:active:hover {
-  color: #82d7ff;
+.curriculum-link:active:hover,
+.social a i:hover {
+  color: #d86538;
+}
+
+
+.title-link,
+.title-link:link,
+.title-link:visited,
+.title-link:active {
+  color: black;
+}
+.title-link:hover,
+.title-link:link:hover,
+.title-link:visited:hover,
+.title-link:active:hover {
+  color: #854c4b;
 }
 
 .more-details {
@@ -740,6 +764,7 @@ video {
 
 /* IE-only styles here. Works for IS 10 & IE 11*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
   #ie-notsupported {
     display: block;
   }
@@ -751,40 +776,49 @@ video {
 }
 
 @media only screen and (max-width: 900px) {
+
+  .whitespace-div {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    /* TODO: cambio opacità immagine background o cambio colori scritta FBONIZZI, o addirittura cambio posizione*/
+  }
+
+.header-title-container {
+  align-self: start;
+  margin-top: 15px;
+}
+
+  .header-image-container, #header-image {
+    position: absolute;
+    right: 0;
+  }
+
+  #header-image {
+    height: 150px;
+  }
+
   .console-content {
     width: 100%;
   }
+
   .console-header {
     width: 100%;
   }
-  .header-row {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    align-items: center;
-  }
-  .left-column {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    margin: 0;
-    grid-row: 2;
-  }
-  .right-column {
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    margin: 0;
-  }
+
   .social a {
     margin: 0 8px;
   }
+
   .tag {
     display: block;
     float: left;
     margin-right: 10px;
   }
+
   footer {
     text-align: center;
     margin: 0 0 15px 0;
